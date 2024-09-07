@@ -23,13 +23,15 @@
         </dependency>
 
 
-        <!-- TestNG -->
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.3.0</version>
+            <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
+
 
         <!-- Cucumber -->
         <dependency>
@@ -44,23 +46,12 @@
             <version>6.9.1</version>
         </dependency>
 
-        <!-- Log4j2 -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.14.1</version>
-        </dependency>
 
-        <!-- Extent Reports -->
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>4.1.0</version>
+            <version>5.1.1</version>
         </dependency>
 
     </dependencies>
