@@ -27,15 +27,15 @@ public class StepDefinition {
     @Before
     public void setUp() {
       //  WebDriver driver;
-        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @Given("User is on google homepage")
     public void user_is_on_google_homepage() {
-        System.out.println("This is Step 1");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();
+       System.out.println("This is Step 1");
+      //  System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
+     //   driver = new ChromeDriver();
         driver.navigate().to("http://www.google.com/");
         driver.manage().window().maximize();
         System.out.println("Google Started at \t" + Instant.now());
@@ -82,3 +82,55 @@ public class StepDefinition {
         System.out.println("Browser closed at \t" + Instant.now());
     }
 }
+
+/*
+Testing started at 23:34 ...
+This is Step 1
+
+Step failed
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
+	at org.test.framework.StepDefinitions.StepDefinition.user_is_on_google_homepage(StepDefinition.java:34)
+	at ✽.User is on google homepage(file:///C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/Features/TestScenarios.feature:4)
+
+
+Step skipped
+
+Step skipped
+
+Step skipped
+
+Step skipped
+
+Failed scenarios:
+file:///C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/Features/TestScenarios.feature:3 # User searches Tickertape on Google and navigates to the site
+
+1 Scenarios (1 failed)
+5 Steps (1 failed, 4 skipped)
+0m0.746s
+
+
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
+	at org.test.framework.StepDefinitions.StepDefinition.user_is_on_google_homepage(StepDefinition.java:34)
+	at ✽.User is on google homepage(file:///C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/Features/TestScenarios.feature:4)
+
+
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://reports.cucumber.io/docs/cucumber-jvm                 │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+
+Process finished with exit code 1
+
+ */
