@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.test.framework.Helper.TakeSnapshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -100,12 +101,13 @@ public class StepDefinition {
     public void user_should_see_the_ltp_of_the_stock() {
         System.out.println("TC2_This is Step 3");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        WebElement ITCPrice = driver.findElement(By.xpath("//*[@id=\"overview\"]/div[2]/div/span[1]"));
+        String ITCPrice = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div/div/aside/div[1]/div[3]/span[1]")).getText();
         System.out.println(driver.getTitle());
-        // Get the text of the element
-        String text = ITCPrice.getText();
         // Print the text
-        System.out.println("Text inside the element: " + text);
+        System.out.println("Text inside the element: " + ITCPrice);
+
+        float LTPofITC = Float.valueOf(ITCPrice.trim());  // Remove any leading/trailing spaces with .trim()
+        System.out.println("Text inside the element: " + LTPofITC);
     }
 
 
@@ -150,6 +152,8 @@ public class StepDefinition {
 
 // Print the Float value
         System.out.println("Integer value inside the element: " + marketMood);
+
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Market");
 
         if (marketMood < 30) {
             System.out.println("THE MARKET IS IN EXTREME FEAR ZONE");
