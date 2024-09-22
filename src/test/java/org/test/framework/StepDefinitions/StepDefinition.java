@@ -7,12 +7,16 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 //
 
+import java.time.Duration;
 import java.time.Instant;
 
 
@@ -22,7 +26,6 @@ public class StepDefinition {
 
     @Before
     public void setUp() {
-        //  WebDriver driver;
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
     }
@@ -67,6 +70,101 @@ public class StepDefinition {
         Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
         System.out.println(actualTitle);
     }
+
+    @Test
+    //Test Case 2
+    @Given("URL to the Tickertape site")
+    public void url_to_the_tickertape_site() {
+        System.out.println("TC2_This is Step 1");
+        driver.navigate().to("https://www.tickertape.in/");
+        driver.manage().window().maximize();
+        System.out.println("Tickertape Started at \t" + Instant.now());
+    }
+
+    @When("User search a stock on Search bar")
+    public void user_search_a_stock_on_search_bar() {
+        System.out.println("TC2_This is Step 2");
+        ////input[@id="search-stock-input"]
+        WebElement searchBar = driver.findElement(By.xpath("//input[@id=\"search-stock-input\"]"));
+        searchBar.sendKeys("ITC");
+        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        // searchBar.sendKeys(Keys.ENTER);
+        ////*[@id="stock-suggestion-ITC Ltd"]/div[1]
+        //   driver.findElement(By.xpath("//*[@id=\"stock-suggestion-ITC Ltd\"]/div[1]")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement stockSuggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='stock-suggestion-ITC Ltd']/div[1]")));
+        stockSuggestion.click();
+    }
+
+    @Then("User should see the LTP of the stock")
+    public void user_should_see_the_ltp_of_the_stock() {
+        System.out.println("TC2_This is Step 3");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        WebElement ITCPrice = driver.findElement(By.xpath("//*[@id=\"overview\"]/div[2]/div/span[1]"));
+        System.out.println(driver.getTitle());
+        // Get the text of the element
+        String text = ITCPrice.getText();
+        // Print the text
+        System.out.println("Text inside the element: " + text);
+    }
+
+
+    //TestCase3
+    @Test
+
+    @Given("URL to the Tickertape site to check MMI")
+    public void url_to_the_tickertape_site_to_check_mmi() {
+        System.out.println("TC3_This is Step 1");
+        driver.navigate().to("https://www.tickertape.in/");
+        driver.manage().window().maximize();
+        System.out.println("Tickertape Started at \t" + Instant.now());
+    }
+
+    @When("User clicks on the MMI link on homepage")
+    public void user_clicks_on_the_mmi_link_on_homepage() {
+        driver.findElement(By.xpath("//a[@href='/market-mood-index?ref=homepage_mmi_section']")).click();
+    }
+
+    @When("User navigates to MMI page")
+    public void user_navigates_to_mmi_page() {
+        // driver.switchTo().window(String.valueOf(1));
+        String mainWindow = driver.getWindowHandle();  // Save the current window handle
+        new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.numberOfWindowsToBe(2));
+
+        // Loop through the window handles and switch to the new tab
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!mainWindow.contentEquals(windowHandle)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+
+    }
+
+    @Then("User should know the mood of market by seeing the meter")
+    public void user_should_know_the_mood_of_market_by_seeing_the_meter() {
+        System.out.println("Title of the new tab: " + driver.getTitle());
+        String Index = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div[1]/div[1]/div/div[2]/span")).getText();
+// Convert the string to a float
+        float marketMood = Float.valueOf(Index.trim());  // Remove any leading/trailing spaces with .trim()
+
+// Print the Float value
+        System.out.println("Integer value inside the element: " + marketMood);
+
+        if (marketMood < 30) {
+            System.out.println("THE MARKET IS IN EXTREME FEAR ZONE");
+        } else if (marketMood >= 30 && marketMood <= 50) {
+            System.out.println("THE MARKET IS IN FEAR ZONE");
+        } else if (marketMood >= 51 && marketMood <= 70) {
+            System.out.println("THE MARKET IS IN GREED ZONE");
+        } else if (marketMood > 70) {
+            System.out.println("THE MARKET IS IN EXTREME GREED ZONE");
+        } else {
+            System.out.println("Market mood value is out of expected range!");
+        }
+
+    }
+
 
     @After
     public void browserClose() {

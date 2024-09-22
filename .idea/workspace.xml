@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="samll fix + Error op added">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="TC1 Working code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Config/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,33 +51,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [--update-snapshots].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/pom.xml&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: TestScenarios (1).executor": "Run",
+    "Cucumber Java.Feature: TestScenarios.executor": "Run",
+    "Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor": "Run",
+    "Cucumber Java.TestCase3.executor": "Run",
+    "Maven.HybridAutomationFramework [--update-snapshots].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install...].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install].executor": "Run",
+    "Maven.HybridAutomationFramework [clean].executor": "Run",
+    "Maven.HybridAutomationFramework [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor": "Run",
+    "TestNG.StepDefinition.executor": "Debug",
+    "TestNG.TestRunner.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/pom.xml",
+    "onboarding.tips.debug.path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\test\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -85,7 +94,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: TestScenarios (1)">
+  <component name="RunManager" selected="TestNG.TestRunner">
     <configuration name="Feature: TestScenarios (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" />
@@ -123,10 +132,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" />
+      <option name="GLUE" value="org.test.framework.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="HybridAutomationFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/Config/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="NAME_FILTER" value="^Check the Market mood on MMI \(Market Mood Index\) screen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Check the Market mood on MMI \(Market Mood Index\) screen$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Check the Market mood on MMI (Market Mood Index) screen" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HybridAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.framework.StepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.test.framework.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="org.test.framework.StepDefinitions.StepDefinition" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -150,11 +187,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: TestScenarios" />
+      <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
+      <item itemvalue="Cucumber Java.TestCase3" />
+      <item itemvalue="TestNG.StepDefinition" />
+      <item itemvalue="TestNG.TestRunner" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
-        <item itemvalue="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml" />
         <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.TestCase3" />
+        <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
+        <item itemvalue="TestNG.StepDefinition" />
         <item itemvalue="Cucumber Java.Feature: TestScenarios" />
       </list>
     </recent_temporary>
@@ -232,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726769218941</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="TC1 Working code.">
+      <option name="closed" value="true" />
+      <created>1726895086106</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726895086106</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,7 +294,8 @@
     <MESSAGE value="Initial Progress made" />
     <MESSAGE value="Code written for 1st Test Case" />
     <MESSAGE value="samll fix + Error op added" />
-    <option name="LAST_COMMIT_MESSAGE" value="samll fix + Error op added" />
+    <MESSAGE value="TC1 Working code." />
+    <option name="LAST_COMMIT_MESSAGE" value="TC1 Working code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
