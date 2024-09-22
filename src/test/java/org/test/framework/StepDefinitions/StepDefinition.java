@@ -88,10 +88,6 @@ public class StepDefinition {
         ////input[@id="search-stock-input"]
         WebElement searchBar = driver.findElement(By.xpath("//input[@id=\"search-stock-input\"]"));
         searchBar.sendKeys("ITC");
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        // searchBar.sendKeys(Keys.ENTER);
-        ////*[@id="stock-suggestion-ITC Ltd"]/div[1]
-        //   driver.findElement(By.xpath("//*[@id=\"stock-suggestion-ITC Ltd\"]/div[1]")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement stockSuggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='stock-suggestion-ITC Ltd']/div[1]")));
         stockSuggestion.click();
@@ -153,7 +149,7 @@ public class StepDefinition {
 // Print the Float value
         System.out.println("Integer value inside the element: " + marketMood);
 
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Market");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Market_Zone");
 
         if (marketMood < 30) {
             System.out.println("THE MARKET IS IN EXTREME FEAR ZONE");

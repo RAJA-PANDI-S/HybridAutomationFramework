@@ -16,10 +16,14 @@ public class TakeSnapshot {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             FileHandler.copy(screenshot, new File(filePath + "\\" + fileName + ".png"));
+            System.out.println("Screenshot saved at: " + filePath + "\\" + fileName + ".png");
         } catch (IOException ex) {
-            throw new RuntimeException(ex);
+         // throw new RuntimeException(ex);
+            System.out.println("Failed to capture screenshot: " + ex.getMessage());
+        } catch (Exception ex) {
+            System.out.println("An error occurred while capturing screenshot: " + ex.getMessage());
         }
-        System.out.println("Screenshot saved at: " + filePath + "\\" + fileName + ".png");
+
     }
 }
 
