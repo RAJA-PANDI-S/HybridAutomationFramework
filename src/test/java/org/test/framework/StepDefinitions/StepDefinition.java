@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
@@ -24,6 +25,7 @@ import java.time.Instant;
 public class StepDefinition {
 
     WebDriver driver;
+    WebDriverWait wait;
 
     @Before
     public void setUp() {
@@ -72,40 +74,62 @@ public class StepDefinition {
         System.out.println(actualTitle);
     }
 
+    //========================================================================================================//
+
     @Test
     //Test Case 2
     @Given("URL to the Tickertape site")
     public void url_to_the_tickertape_site() {
         System.out.println("TC2_This is Step 1");
         driver.navigate().to("https://www.tickertape.in/");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.manage().window().maximize();
         System.out.println("Tickertape Started at \t" + Instant.now());
     }
 
     @When("User search a stock on Search bar")
-    public void user_search_a_stock_on_search_bar() {
+    public void user_search_a_stock_on_search_bar() throws InterruptedException {
         System.out.println("TC2_This is Step 2");
         ////input[@id="search-stock-input"]
-        WebElement searchBar = driver.findElement(By.xpath("//input[@id=\"search-stock-input\"]"));
-        searchBar.sendKeys("ITC");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        String input = "ITC";
+        WebElement searchBar = driver.findElement(By.xpath("/html/body/div[1]/div[2]/header/div/div[1]/div[2]/div/div[1]/input"));
+        //searchBar.sendKeys("ITC",Keys.ENTER);
+      //  new Actions(driver).sendKeys(searchBar,Keys.chord("ITC")).perform();
+        for (int i = 0; i < input.length(); i++) {
+            // Extract the character at the current index and convert it to a string.
+            searchBar.sendKeys(String.valueOf(input.charAt(i)));
+            // Add a delay or wait (e.g., for user interface responsiveness).
+            Thread.sleep(3000);
+        }
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement stockSuggestion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='stock-suggestion-ITC Ltd']/div[1]")));
         stockSuggestion.click();
+        Thread.sleep(3000);
     }
 
     @Then("User should see the LTP of the stock")
-    public void user_should_see_the_ltp_of_the_stock() {
+    public void user_should_see_the_ltp_of_the_stock() throws InterruptedException {
         System.out.println("TC2_This is Step 3");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        String ITCPrice = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div/div/aside/div[1]/div[3]/span[1]")).getText();
+        Thread.sleep(3000);
         System.out.println(driver.getTitle());
-        // Print the text
-        System.out.println("Text inside the element: " + ITCPrice);
 
-        float LTPofITC = Float.valueOf(ITCPrice.trim());  // Remove any leading/trailing spaces with .trim()
-        System.out.println("Text inside the element: " + LTPofITC);
+        String StockPrice = driver.findElement(By.xpath("//span[contains(@class,'current-price')]")).getText();
+        String StockPer = driver.findElement(By.xpath("//span[contains(@class,'percentage-value')]")).getText();
+        String StockNm = driver.findElement(By.xpath("//h1[contains(@class,'security-name')]")).getText();
+
+        System.out.println("Text inside the element Price: " + StockPrice);
+        System.out.println("Text inside the element Percentage: " + StockPer);
+        System.out.println("Text inside the element StockName: " + StockNm);
+
+
+        //  float LTPofITC = Float.valueOf(ITCPrice.trim());  // Remove any leading/trailing spaces with .trim()
+        // System.out.println("Text inside the element: " + LTPofITC);
     }
 
+
+    //========================================================================================================//
 
     //TestCase3
     @Test
@@ -143,12 +167,10 @@ public class StepDefinition {
     public void user_should_know_the_mood_of_market_by_seeing_the_meter() {
         System.out.println("Title of the new tab: " + driver.getTitle());
         String Index = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div[1]/div[1]/div/div[2]/span")).getText();
-// Convert the string to a float
+        // Convert the string to a float
         float marketMood = Float.valueOf(Index.trim());  // Remove any leading/trailing spaces with .trim()
 
-// Print the Float value
-        System.out.println("Integer value inside the element: " + marketMood);
-
+        System.out.println("Market Meter shows the value: " + marketMood);
         TakeSnapshot snapshot = new TakeSnapshot(driver, "Market_Zone");
 
         if (marketMood < 30) {

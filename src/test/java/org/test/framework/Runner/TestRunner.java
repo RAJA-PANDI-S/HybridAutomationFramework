@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"pretty", "html:target/cucumber-reports.html","json:target/cucumber/report/report.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "junit:target/cucumber/report/report.xml"},
-        tags = "@TestCase3",
+        //tags = "@TestCase2",
       //  plugin = {"tech.grasshopper.extent.cucumber6.adapter.ExtentCucumberAdapter:"},
         monochrome = true
 )
