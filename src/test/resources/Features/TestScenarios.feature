@@ -20,3 +20,4 @@ Feature: Tickertape Site Automation
     When User clicks on the MMI link on homepage
     And User navigates to MMI page
     Then User should know the mood of market by seeing the meter
+
