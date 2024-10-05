@@ -6,11 +6,13 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/Features",
         glue = "org.test.framework.StepDefinitions",
-        plugin = {"pretty", "html:target/cucumber-reports.html","json:target/cucumber/report/report.json",
+        plugin = {"pretty",
+                "html:target/cucumber-reports.html",
+                "json:target/cucumber/report/report.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "junit:target/cucumber/report/report.xml"},
         tags = "@TV_TestCase1",
-      //  plugin = {"tech.grasshopper.extent.cucumber6.adapter.ExtentCucumberAdapter:"},
+        //  plugin = {"tech.grasshopper.extent.cucumber6.adapter.ExtentCucumberAdapter:"},
         monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
