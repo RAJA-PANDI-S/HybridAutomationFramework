@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="New TC added for Trading View">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/YahooFinance.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Tickertape.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -151,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StepsForTickertape" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HybridAutomationFramework" />
       <extension name="coverage">
         <pattern>
@@ -160,7 +167,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.test.framework.StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="org.test.framework.StepDefinitions.StepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="org.test.framework.StepDefinitions.StepsForTickertape" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -189,7 +196,7 @@
       <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
       <item itemvalue="Cucumber Java.Feature: TradingView" />
       <item itemvalue="Cucumber Java.TestCase3" />
-      <item itemvalue="TestNG.StepDefinition" />
+      <item itemvalue="TestNG.StepsForTickertape" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
     <recent_temporary>
@@ -198,7 +205,7 @@
         <item itemvalue="Cucumber Java.Feature: TradingView" />
         <item itemvalue="Cucumber Java.TestCase3" />
         <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
-        <item itemvalue="TestNG.StepDefinition" />
+        <item itemvalue="TestNG.StepsForTickertape" />
       </list>
     </recent_temporary>
   </component>
@@ -323,8 +330,27 @@
       <option name="project" value="LOCAL" />
       <updated>1727321712677</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="New TC added for Trading View">
+      <option name="closed" value="true" />
+      <created>1728140900431</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728140900431</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />

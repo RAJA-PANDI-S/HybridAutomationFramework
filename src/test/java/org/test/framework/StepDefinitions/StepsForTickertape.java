@@ -8,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
@@ -22,7 +21,7 @@ import java.time.Duration;
 import java.time.Instant;
 
 
-public class StepDefinition {
+public class StepsForTickertape {
 
     WebDriver driver;
     WebDriverWait wait;
