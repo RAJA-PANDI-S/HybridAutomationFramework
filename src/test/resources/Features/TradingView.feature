@@ -17,10 +17,10 @@ Feature: Trading View Test Automation Scenarios
     And login should failed and info message should displayed as 'Invalid username or password'
 
   @TV_TestCase3 @TV_Regression
-  Scenario: Verify that User login to the Trading view site and Validate successful login
+  Scenario: Validate the export functionality of stock screener
     Given URL to the TradingView site
     When User Enters NIFTY in a search box
     And user hit Enter and A Chart opens
     Then User clicks on stock screener option at the bottom
-    And go to filter and choses Health services in sector
+    And go to filter and chooses Health services in sector
     And close the current popup now click export csv option to download the data
