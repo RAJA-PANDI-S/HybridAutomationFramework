@@ -2,6 +2,7 @@ package org.test.framework.StepDefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -186,6 +187,83 @@ public class StepsForTickertape {
 
     }
 
+    //==============================================================================================
+
+    // Scenario: FIND TOP 5 GAINERS
+
+    @When("User is on the Dashboard or Homepage")
+    public void userIsOnTheDashboardOrHomepage() {
+
+    }
+
+    @Then("top 5 gainers stock names should be displayed")
+    public void display_top_5_gainers() {
+        // Implement retrieval and display of top 5 gainers' stock names
+    }
+
+
+    // Scenario: FIND TOP 5 LOSERS
+    @And("clicks on losers button on Today's stocks section")
+    public void clicksOnLosersButtonOnTodaySStocksSection() {
+    }
+
+    @Then("top 5 losers stocks should be displayed")
+    public void display_top_5_losers() {
+        // Implement retrieval and display of top 5 losers' stock names
+    }
+
+
+    // Scenario: OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP
+    @When("User clicks on See All button on the Index section Then choose the Sectoral button")
+    public void userClicksOnSeeAllButtonOnTheIndexSectionThenChooseTheSectoralButton() {
+
+    }
+
+    @Then("Nifty IT price should be printed")
+    public void print_nifty_it_price() {
+        // Implement retrieval and print of Nifty IT price (LTP - Last Traded Price)
+    }
+
+
+    // Scenario: FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP
+    @When("Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page")
+    public void clicksOnScreenerMenuAndClicksOnStartScreeningOptionAndNavigatesToTheScreenerPage() {
+
+    }
+
+    @When("Selects Small Cap option from the left pane")
+    public void user_selects_small_cap_option() {
+        // Implement selection of Small Cap option from the filter pane
+    }
+
+    @Then("Pick first 5 stocks and Print them with Market cap")
+    public void print_top_5_small_cap_stocks() {
+        // Implement retrieval and print of top 5 small cap stocks with their market cap
+    }
+
+
+    // Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
+    @When("Selects Mid Cap option from the left pane")
+    public void user_selects_mid_cap_option() {
+        // Implement selection of Mid Cap option from the filter pane
+    }
+
+    @Then("Pick first 5 stocks and Print them with Market cap")
+    public void print_top_5_mid_cap_stocks() {
+        // Implement retrieval and print of top 5 mid cap stocks with their market cap
+    }
+
+
+    // Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
+    @When("Selects Large Cap option from the left pane")
+    public void user_selects_large_cap_option() {
+        // Implement selection of Large Cap option from the filter pane
+    }
+
+    @Then("Pick first 5 stocks and Print them with Market cap")
+    public void print_top_5_large_cap_stocks() {
+        // Implement retrieval and print of top 5 large cap stocks with their market cap
+    }
 
     @After
     public void browserClose() {
@@ -193,5 +271,6 @@ public class StepsForTickertape {
         driver.quit();
         System.out.println("Browser closed at \t" + Instant.now());
     }
+
 }
 

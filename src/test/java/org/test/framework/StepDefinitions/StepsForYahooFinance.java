@@ -35,7 +35,7 @@ public class StepsForYahooFinance {
         // Implement stock search in the search bar
     }
 
-    @When("Choses 5Y range in the graph")
+    @When("Chooses 5Y range in the graph")
     public void user_selects_5Y_range() {
         // Implement selection of the 5Y range in the graph
     }
@@ -47,7 +47,7 @@ public class StepsForYahooFinance {
 
     //===========================================================================================
     // Scenario: Verify the close price of a stock on OCT 15,2024
-    @When("Choses Historical Data option")
+    @When("Chooses Historical Data option")
     public void user_selects_historical_data_option() {
         // Implement selection of the Historical Data option
     }
@@ -83,6 +83,11 @@ public class StepsForYahooFinance {
     //===========================================================================================
 
     // Scenario: Verify the Founder and CEO Name of a given stock
+    @When("User search for a Wipro stock on search bar")
+    public void userSearchForAWiproStockOnSearchBar() {
+
+    }
+
     @When("user selects Profile option")
     public void user_selects_profile_option() {
         // Implement selection of Profile option for the stock

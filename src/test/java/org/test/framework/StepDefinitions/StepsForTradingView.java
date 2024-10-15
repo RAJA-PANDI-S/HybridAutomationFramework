@@ -24,6 +24,7 @@ public class StepsForTradingView {
 
     @Test
 
+    //TEST CASE 1
     @Given("URL to the TradingView site")
     public void url_to_the_trading_view_site() {
         // Write code here that turns the phrase above into concrete actions
@@ -63,8 +64,8 @@ public class StepsForTradingView {
     }
 
     //============================================================================================
-    //Test Case3
 
+    //TEST CASE 3
     @When("User Enters NIFTY in a search box")
     public void user_enters_nifty_in_search_box() {
         // Locate the search box and enter "NIFTY"
@@ -93,8 +94,10 @@ public class StepsForTradingView {
     public void close_popup_and_click_export_csv() {
         // Close any pop-up that appears
 
+
     }
 
+    //===========================================================================================
 
     @After
     public void browserClose() {
