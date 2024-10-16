@@ -45,21 +45,21 @@ Feature: Tickertape Site Automation
     Given URL to the Tickertape site
     When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page
     And Selects Small Cap option from the left pane
-    Then Pick first 5 stocks and Print them with Market cap
+    Then Pick first 5 small stocks and Print them with Market cap
 
   @TT_TestCase8 @TT_Regression
   Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
     Given URL to the Tickertape site
     When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page
     And Selects Mid Cap option from the left pane
-    Then Pick first 5 stocks and Print them with Market cap
+    Then Pick first 5 mid stocks and Print them with Market cap
 
   @TT_TestCase9 @TT_Regression
   Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
     Given URL to the Tickertape site
     When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page
     And Selects Large Cap option from the left pane
-    Then Pick first 5 stocks and Print them with Market cap
+    Then Pick first 5 large stocks and Print them with Market cap
 
 
 

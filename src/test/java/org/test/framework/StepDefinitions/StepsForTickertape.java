@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
@@ -31,9 +33,11 @@ public class StepsForTickertape {
     public void setUp() {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
+        System.out.println("Browser launched");
     }
 
     @Test
+    //Scenario: User searches Tickertape on Google and navigates to the site
     @Given("User is on google homepage")
     public void user_is_on_google_homepage() {
         System.out.println("This is Step 1");
@@ -77,7 +81,7 @@ public class StepsForTickertape {
     //========================================================================================================//
 
     @Test
-    //Test Case 2
+    //Scenario: User searches stock on tickertape site
     @Given("URL to the Tickertape site")
     public void url_to_the_tickertape_site() {
         System.out.println("TC2_This is Step 1");
@@ -131,7 +135,7 @@ public class StepsForTickertape {
 
     //========================================================================================================//
 
-    //TestCase3
+    //Scenario: Check the Market mood on MMI (Market Mood Index) screen
     @Test
 
     @Given("URL to the Tickertape site to check MMI")
@@ -236,9 +240,8 @@ public class StepsForTickertape {
         // Implement selection of Small Cap option from the filter pane
     }
 
-    @Then("Pick first 5 stocks and Print them with Market cap")
-    public void print_top_5_small_cap_stocks() {
-        // Implement retrieval and print of top 5 small cap stocks with their market cap
+    @Then("Pick first {int} small stocks and Print them with Market cap")
+    public void pickFirstSmallStocksAndPrintThemWithMarketCap(int arg0) {
     }
 
 
@@ -248,9 +251,8 @@ public class StepsForTickertape {
         // Implement selection of Mid Cap option from the filter pane
     }
 
-    @Then("Pick first 5 stocks and Print them with Market cap")
-    public void print_top_5_mid_cap_stocks() {
-        // Implement retrieval and print of top 5 mid cap stocks with their market cap
+    @Then("Pick first {int} mid stocks and Print them with Market cap")
+    public void pickFirstMidStocksAndPrintThemWithMarketCap(int arg0) {
     }
 
 
@@ -260,9 +262,10 @@ public class StepsForTickertape {
         // Implement selection of Large Cap option from the filter pane
     }
 
-    @Then("Pick first 5 stocks and Print them with Market cap")
-    public void print_top_5_large_cap_stocks() {
-        // Implement retrieval and print of top 5 large cap stocks with their market cap
+
+    @Then("Pick first {int} large stocks and Print them with Market cap")
+    public void pickFirstLargeStocksAndPrintThemWithMarketCap(int arg0) {
+
     }
 
     @After
@@ -271,6 +274,7 @@ public class StepsForTickertape {
         driver.quit();
         System.out.println("Browser closed at \t" + Instant.now());
     }
+
 
 }
 
