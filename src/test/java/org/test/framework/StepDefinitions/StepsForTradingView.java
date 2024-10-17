@@ -5,7 +5,9 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +17,7 @@ import org.testng.annotations.Test;
 
 import java.time.Instant;
 
-@Slf4j
+
 public class StepsForTradingView {
     WebDriver driver;
     WebDriverWait wait;
@@ -41,6 +43,7 @@ public class StepsForTradingView {
     @When("User Clicks on Profile icon and Chooses Sign in option")
     public void user_clicks_on_profile_icon_and_chooses_sign_in_option() throws InterruptedException {
         driver.findElement(By.xpath("//button[@class='tv-header__user-menu-button tv-header__user-menu-button--anonymous js-header-user-menu-button']")).click();
+       Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='label-mDJVFqQ3 label-jFqVJoPk label-mDJVFqQ3 label-YQGjel_5 js-main-menu-dropdown-link-title']")).click();
         Thread.sleep(3000);
     }
@@ -68,8 +71,6 @@ public class StepsForTradingView {
     public void user_clicks_sign_in_button_and_able_to_login_successfully() {
 
         driver.findElement(By.xpath("//span[contains(text(),\"Sign in\")]")).click();
-        log.info("Logged in Successfully");
-
     }
 
     //============================================================================================

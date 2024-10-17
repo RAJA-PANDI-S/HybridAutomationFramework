@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Existing Code update">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Trading View TC1 coded.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
@@ -92,9 +92,9 @@
       <command value="mvn --update-snapshots" />
       <command value="mvn clean" />
       <command value="mvn install" />
-      <command value="mvn clean install" />
       <command value="mvn clean install -U" />
       <command value="mvn clean install -X" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.TestRunner">
@@ -377,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729087168216</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Trading View TC1 coded.">
+      <option name="closed" value="true" />
+      <created>1729185192601</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729185192601</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -407,6 +415,7 @@
     <MESSAGE value="Created steps outline for yahoo finance scenario" />
     <MESSAGE value="EncryptionUtil and ExcelDataDrivenUtil added." />
     <MESSAGE value="Existing Code update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Existing Code update" />
+    <MESSAGE value="Trading View TC1 coded." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trading View TC1 coded." />
   </component>
 </project>
