@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="EncryptionUtil and ExcelDataDrivenUtil added.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Existing Code update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Tickertape.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Tickertape.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Market_Zone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
     </list>
@@ -52,34 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TradingView.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.TestCase3.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [--update-snapshots].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.StepDefinition.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/pom.xml&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: TestScenarios (1).executor": "Run",
+    "Cucumber Java.Feature: TestScenarios.executor": "Run",
+    "Cucumber Java.Feature: TradingView.executor": "Run",
+    "Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor": "Run",
+    "Cucumber Java.TestCase3.executor": "Run",
+    "Maven.HybridAutomationFramework [--update-snapshots].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install...].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install].executor": "Run",
+    "Maven.HybridAutomationFramework [clean].executor": "Run",
+    "Maven.HybridAutomationFramework [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor": "Run",
+    "TestNG.StepDefinition.executor": "Debug",
+    "TestNG.TestRunner.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/pom.xml",
+    "onboarding.tips.debug.path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\test" />
@@ -94,6 +93,8 @@
       <command value="mvn clean" />
       <command value="mvn install" />
       <command value="mvn clean install" />
+      <command value="mvn clean install -U" />
+      <command value="mvn clean install -X" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.TestRunner">
@@ -368,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729085396089</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Existing Code update">
+      <option name="closed" value="true" />
+      <created>1729087168216</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729087168216</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,6 +406,7 @@
     <MESSAGE value="New steps and feature files added for YahooFinance, TradingView" />
     <MESSAGE value="Created steps outline for yahoo finance scenario" />
     <MESSAGE value="EncryptionUtil and ExcelDataDrivenUtil added." />
-    <option name="LAST_COMMIT_MESSAGE" value="EncryptionUtil and ExcelDataDrivenUtil added." />
+    <MESSAGE value="Existing Code update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Existing Code update" />
   </component>
 </project>
