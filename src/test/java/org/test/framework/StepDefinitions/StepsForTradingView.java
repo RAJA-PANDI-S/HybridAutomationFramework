@@ -5,7 +5,6 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-//import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -23,9 +22,9 @@ import java.time.Instant;
 
 
 public class StepsForTradingView {
-    private static final Logger log = LogManager.getLogger(StepsForTradingView.class);
     WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
+    private static final Logger logger = LogManager.getLogger(StepsForTradingView.class);
 
   /*  @Before
     public void setUp() {
@@ -92,7 +91,7 @@ public class StepsForTradingView {
         System.out.println("==========================================================================");
         System.out.println(actualTitle);
         System.out.println("==========================================================================");
-        log.info("Test 1 completed Successfully");
+        logger.info("Test 1 completed Successfully");
 
     }
 
