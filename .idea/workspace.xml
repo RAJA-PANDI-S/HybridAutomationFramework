@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="ExcelDD and Encryption concept integrated.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Log4j.properties" afterDir="false" />
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="lo4j2 dependency added .xml file added. logs working.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/test/framework/Utilities/LoggerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/framework/Utilities/LoggerUtility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config/Log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/HooksStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/HooksStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
@@ -406,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729248809227</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="lo4j2 dependency added .xml file added. logs working.">
+      <option name="closed" value="true" />
+      <created>1729250941186</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729250941186</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,6 +447,7 @@
     <MESSAGE value="Trading View TC1 coded." />
     <MESSAGE value="Trading View TC1 coded - working as expected" />
     <MESSAGE value="ExcelDD and Encryption concept integrated." />
-    <option name="LAST_COMMIT_MESSAGE" value="ExcelDD and Encryption concept integrated." />
+    <MESSAGE value="lo4j2 dependency added .xml file added. logs working." />
+    <option name="LAST_COMMIT_MESSAGE" value="lo4j2 dependency added .xml file added. logs working." />
   </component>
 </project>

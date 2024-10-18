@@ -1,0 +1,25 @@
+2024-10-18 16:57:45 [main] INFO  org.test.framework.StepDefinitions.StepsForTradingView - Test 1 completed Successfully
+2024-10-18 17:00:50 [main] INFO  org.test.framework.StepDefinitions.StepsForTradingView - Test 1 completed Successfully
+2024-10-18 17:09:33 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:09:54 [main] INFO  GlobalLogger - Chrome Browser Terminated Successfully
+2024-10-18 17:10:16 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:10:50 [main] INFO  GlobalLogger - TradingView TestCase 1 completed Successfully
+2024-10-18 17:10:51 [main] INFO  GlobalLogger - Chrome Browser Terminated Successfully
+2024-10-18 17:18:07 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:18:33 [main] INFO  GlobalLogger - TradingView TestCase 1 completed Successfully
+2024-10-18 17:18:34 [main] INFO  CustomLogger - Chrome Browser Terminated Successfully
+2024-10-18 17:20:11 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:20:37 [main] INFO  GlobalLogger - TradingView TestCase 1 completed Successfully
+2024-10-18 17:22:38 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:23:05 [main] INFO  GlobalLogger - TradingView TestCase 1 completed Successfully
+2024-10-18 17:23:06 [main] INFO  CustomLogger - org.test.framework.StepDefinitions.HooksStepDefinition - Chrome Browser Terminated Successfully
+2024-10-18 17:24:33 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:25:01 [main] INFO  | - org.test.framework.StepDefinitions.HooksStepDefinition - Chrome Browser Terminated Successfully
+2024-10-18 17:26:09 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:26:35 [main] INFO  | - org.test.framework.StepDefinitions.HooksStepDefinition Chrome Browser Terminated Successfully
+2024-10-18 17:30:24 [main] INFO  GlobalLogger - Chrome Browser Initiated Successfully
+2024-10-18 17:30:51 [main] INFO  | - org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-18 17:31:28 [main] INFO  GlobalLogger Chrome Browser Initiated Successfully
+2024-10-18 17:31:58 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-18 17:35:15 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-18 17:35:48 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

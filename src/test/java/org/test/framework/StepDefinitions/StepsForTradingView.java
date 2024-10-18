@@ -1,30 +1,24 @@
 package org.test.framework.StepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Utilities.EncryptionUtil;
 import org.test.framework.Utilities.ExcelDataDrivenUtil;
-import org.testng.Assert;
+import org.test.framework.Utilities.LoggerUtil;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.time.Instant;
 
 
 public class StepsForTradingView {
     WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
-    private static final Logger logger = LogManager.getLogger(StepsForTradingView.class);
+    //private static final Logger logger = LogManager.getLogger(StepsForTradingView.class);
 
   /*  @Before
     public void setUp() {
@@ -91,8 +85,8 @@ public class StepsForTradingView {
         System.out.println("==========================================================================");
         System.out.println(actualTitle);
         System.out.println("==========================================================================");
-        logger.info("Test 1 completed Successfully");
-
+        //logger.info("Test 1 completed Successfully");
+        LoggerUtil.info("TradingView TestCase 1 completed Successfully");
     }
 
     //============================================================================================
