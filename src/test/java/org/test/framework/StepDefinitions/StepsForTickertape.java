@@ -1,22 +1,19 @@
 package org.test.framework.StepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
+import org.test.framework.Utilities.LoggerUtility;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 //
 
@@ -26,16 +23,18 @@ import java.time.Instant;
 
 public class StepsForTickertape {
 
-    WebDriver driver;
+    WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
 
+//    Logger log = LoggerUtility.getLog(StepsForTickertape.class);
+/*
     @Before
     public void setUp() {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
         System.out.println("Browser launched");
     }
-
+*/
     @Test
     //Scenario: User searches Tickertape on Google and navigates to the site
     @Given("User is on google homepage")
@@ -43,7 +42,7 @@ public class StepsForTickertape {
         System.out.println("This is Step 1");
         driver.navigate().to("http://www.google.com/");
         driver.manage().window().maximize();
-        System.out.println("Google Started at \t" + Instant.now());
+        System.out.println("Google Started at \t{}"+ Instant.now());
     }
 
     @When("User enters Tickertape in search bar")
@@ -56,7 +55,7 @@ public class StepsForTickertape {
     public void clicks_enter() {
         System.out.println("This is Step 3");
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div/div[4]/center/input[1]")).sendKeys(Keys.ENTER);
-        System.out.println("Searched Tickertape at \t" + Instant.now());
+        System.out.println("Searched Tickertape at \t{}"+ Instant.now());
     }
 
     @Then("User clicks on the link of tickertape site")
@@ -268,13 +267,14 @@ public class StepsForTickertape {
 
     }
 
+ /*
     @After
     public void browserClose() {
         //driver.close();
         driver.quit();
         System.out.println("Browser closed at \t" + Instant.now());
     }
-
+*/
 
 }
 

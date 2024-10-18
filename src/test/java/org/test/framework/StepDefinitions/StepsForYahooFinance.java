@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 import java.time.Instant;
 
 public class StepsForYahooFinance {
-    WebDriver driver;
+    WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
-
+/*
     @Before
     public void setUp() {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
     }
-
+*/
     @Test
 
     // Scenario: Verify a HIGH/LOW percentage of a stock in a 5Y Range
@@ -117,10 +117,10 @@ public class StepsForYahooFinance {
     }
 
     //===========================================================================================
-
+/*
     @After
     public void browserClose() {
         driver.quit();
         System.out.println("Browser closed at \t" + Instant.now());
-    }
+    }*/
 }

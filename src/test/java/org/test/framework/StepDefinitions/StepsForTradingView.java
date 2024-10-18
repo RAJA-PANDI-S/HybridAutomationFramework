@@ -13,20 +13,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.test.framework.Utilities.EncryptionUtil;
+import org.test.framework.Utilities.ExcelDataDrivenUtil;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.time.Instant;
 
 
 public class StepsForTradingView {
-    WebDriver driver;
+    private static final Logger log = LogManager.getLogger(StepsForTradingView.class);
+    WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
 
-    @Before
+  /*  @Before
     public void setUp() {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
-    }
+    }*/
 
     @Test
 
@@ -43,7 +47,7 @@ public class StepsForTradingView {
     @When("User Clicks on Profile icon and Chooses Sign in option")
     public void user_clicks_on_profile_icon_and_chooses_sign_in_option() throws InterruptedException {
         driver.findElement(By.xpath("//button[@class='tv-header__user-menu-button tv-header__user-menu-button--anonymous js-header-user-menu-button']")).click();
-       Thread.sleep(3000);
+       Thread.sleep(5000);
         driver.findElement(By.xpath("//span[@class='label-mDJVFqQ3 label-jFqVJoPk label-mDJVFqQ3 label-YQGjel_5 js-main-menu-dropdown-link-title']")).click();
         Thread.sleep(3000);
     }
@@ -55,22 +59,41 @@ public class StepsForTradingView {
     }
 
     @Then("Login page appears where User enters Username and Password")
-    public void login_page_appears_where_user_enters_username_and_password() {
+    public void login_page_appears_where_user_enters_username_and_password() throws Exception {
+        String filePath = "src/main/resources/Config/user_credentials.xlsx";
+        ExcelDataDrivenUtil.loadExcel(filePath);
+
+        // Read the username and password from the Excel file
+        String username = ExcelDataDrivenUtil.getCellData("Sheet1", 1, 0);
+        String password = ExcelDataDrivenUtil.getCellData("Sheet1", 1, 1);
+
+        String encryptedPassword = EncryptionUtil.encrypt(password);
+        System.out.println("Password Encrypted Successfully --> "+encryptedPassword);
+        String decryptedPassword = EncryptionUtil.decrypt(encryptedPassword);
 
         WebElement UsernameField = driver.findElement(By.xpath("//input[@name='id_username']"));
         UsernameField.click();
-        UsernameField.sendKeys("raja.official.com@gmail.com");
+        UsernameField.sendKeys(username);
 
         WebElement PasswordField = driver.findElement(By.xpath("//input[@name='id_password']"));
         PasswordField.click();
-        PasswordField.sendKeys("17suca16");
+        PasswordField.sendKeys(decryptedPassword);
 
     }
 
     @Then("User clicks sign in button and able to login successfully")
-    public void user_clicks_sign_in_button_and_able_to_login_successfully() {
+    public void user_clicks_sign_in_button_and_able_to_login_successfully() throws InterruptedException {
 
         driver.findElement(By.xpath("//span[contains(text(),\"Sign in\")]")).click();
+        Thread.sleep(3000);
+        String actualTitle = driver.getTitle();
+        //String expectedTitle = "";
+        //Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
+        System.out.println("==========================================================================");
+        System.out.println(actualTitle);
+        System.out.println("==========================================================================");
+        log.info("Test 1 completed Successfully");
+
     }
 
     //============================================================================================
@@ -121,10 +144,10 @@ public class StepsForTradingView {
     }
 
     //===========================================================================================
-
+/*
     @After
     public void browserClose() {
         driver.quit();
         System.out.println("Browser closed at \t" + Instant.now());
-    }
+    }*/
 }

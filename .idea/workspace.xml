@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Trading View TC1 coded.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Trading View TC1 coded - working as expected">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/test/framework/Utilities/LoggerUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Config/Log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Config/user_credentials.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/HooksStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
     </list>
@@ -70,7 +75,7 @@
     "TestNG.TestRunner.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/pom.xml",
+    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config",
     "onboarding.tips.debug.path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
@@ -81,6 +86,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\main\resources\Config" />
       <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -385,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729185192601</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Trading View TC1 coded - working as expected">
+      <option name="closed" value="true" />
+      <created>1729186951832</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729186951832</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,6 +430,7 @@
     <MESSAGE value="EncryptionUtil and ExcelDataDrivenUtil added." />
     <MESSAGE value="Existing Code update" />
     <MESSAGE value="Trading View TC1 coded." />
-    <option name="LAST_COMMIT_MESSAGE" value="Trading View TC1 coded." />
+    <MESSAGE value="Trading View TC1 coded - working as expected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trading View TC1 coded - working as expected" />
   </component>
 </project>
