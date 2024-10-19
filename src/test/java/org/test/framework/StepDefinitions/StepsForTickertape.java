@@ -1,5 +1,7 @@
 package org.test.framework.StepDefinitions;
 
+import org.test.framework.Utilities.ExtentUtil;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,21 +21,15 @@ import org.openqa.selenium.By;
 import java.time.Duration;
 import java.time.Instant;
 
+import static org.test.framework.Utilities.ExtentUtil.test;
+
 
 public class StepsForTickertape {
 
     WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
+    ExtentUtil extentUtil = new ExtentUtil();
 
-//    Logger log = LoggerUtility.getLog(StepsForTickertape.class);
-/*
-    @Before
-    public void setUp() {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();
-        System.out.println("Browser launched");
-    }
-*/
     @Test
     //Scenario: User searches Tickertape on Google and navigates to the site
     @Given("User is on google homepage")
@@ -41,20 +37,25 @@ public class StepsForTickertape {
         System.out.println("This is Step 1");
         driver.navigate().to("http://www.google.com/");
         driver.manage().window().maximize();
-        System.out.println("Google Started at \t{}"+ Instant.now());
+        System.out.println("Google Started at \t{}" + Instant.now());
+        extentUtil.extentCreateTest("Tc01_Homepage");
+        test.pass("Step 1 Passed");
+
     }
 
     @When("User enters Tickertape in search bar")
     public void user_enters_tickertape_in_search_bar() {
         System.out.println("This is Step 2");
         driver.findElement(By.xpath("//*[@id=\"APjFqb\"]")).sendKeys("tickertape.in");
+        extentUtil.extentCreateTest("TC01_Verify Home Page");
+        test.pass("Step 2 Passed");
     }
 
     @When("Clicks enter")
     public void clicks_enter() {
         System.out.println("This is Step 3");
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div/div[4]/center/input[1]")).sendKeys(Keys.ENTER);
-        System.out.println("Searched Tickertape at \t{}"+ Instant.now());
+        System.out.println("Searched Tickertape at \t{}" + Instant.now());
     }
 
     @Then("User clicks on the link of tickertape site")
@@ -84,9 +85,11 @@ public class StepsForTickertape {
     public void url_to_the_tickertape_site() {
         System.out.println("TC2_This is Step 1");
         driver.navigate().to("https://www.tickertape.in/");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.manage().window().maximize();
         System.out.println("Tickertape Started at \t" + Instant.now());
+        extentUtil.extentCreateTest("TC02_Verify Stock Data");
+        test.pass("TC02_Step 1 Passed");
     }
 
     @When("User search a stock on Search bar")
@@ -96,13 +99,12 @@ public class StepsForTickertape {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String input = "ITC";
         WebElement searchBar = driver.findElement(By.xpath("/html/body/div[1]/div[2]/header/div/div[1]/div[2]/div/div[1]/input"));
-        //searchBar.sendKeys("ITC",Keys.ENTER);
-      //  new Actions(driver).sendKeys(searchBar,Keys.chord("ITC")).perform();
+
         for (int i = 0; i < input.length(); i++) {
             // Extract the character at the current index and convert it to a string.
             searchBar.sendKeys(String.valueOf(input.charAt(i)));
             // Add a delay or wait (e.g., for user interface responsiveness).
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         }
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -265,15 +267,6 @@ public class StepsForTickertape {
     public void pickFirstLargeStocksAndPrintThemWithMarketCap(int arg0) {
 
     }
-
- /*
-    @After
-    public void browserClose() {
-        //driver.close();
-        driver.quit();
-        System.out.println("Browser closed at \t" + Instant.now());
-    }
-*/
 
 }
 

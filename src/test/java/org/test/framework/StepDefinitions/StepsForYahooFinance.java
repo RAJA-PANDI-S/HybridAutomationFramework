@@ -15,15 +15,8 @@ import java.time.Instant;
 public class StepsForYahooFinance {
     WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait;
-/*
-    @Before
-    public void setUp() {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raja\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();
-    }
-*/
-    @Test
 
+    @Test
     // Scenario: Verify a HIGH/LOW percentage of a stock in a 5Y Range
     @Given("URL to the Yahoo Finance site")
     public void open_yahoo_finance_site() {
@@ -117,10 +110,5 @@ public class StepsForYahooFinance {
     }
 
     //===========================================================================================
-/*
-    @After
-    public void browserClose() {
-        driver.quit();
-        System.out.println("Browser closed at \t" + Instant.now());
-    }*/
+
 }
