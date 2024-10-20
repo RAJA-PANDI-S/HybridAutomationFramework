@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="extent-code added, Tradingview TCs removed, Code refactor.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
-    </list>
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="New TC2 added for TradingView." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -436,7 +428,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729355770864</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="New TC2 added for TradingView.">
+      <option name="closed" value="true" />
+      <created>1729441166605</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1729441166606</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,6 +472,7 @@
     <MESSAGE value="lo4j2 dependency added .xml file added. logs working." />
     <MESSAGE value="lo4j2 fix." />
     <MESSAGE value="extent-code added, Tradingview TCs removed, Code refactor." />
-    <option name="LAST_COMMIT_MESSAGE" value="extent-code added, Tradingview TCs removed, Code refactor." />
+    <MESSAGE value="New TC2 added for TradingView." />
+    <option name="LAST_COMMIT_MESSAGE" value="New TC2 added for TradingView." />
   </component>
 </project>
