@@ -1,5 +1,6 @@
 package org.test.framework.StepDefinitions;
 
+import org.openqa.selenium.*;
 import org.test.framework.Utilities.ExtentUtil;
 
 import io.cucumber.java.en.And;
@@ -7,15 +8,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 //import org.apache.log4j.Logger;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.openqa.selenium.By;
 //
 
 import java.time.Duration;
@@ -27,7 +24,7 @@ import static org.test.framework.Utilities.ExtentUtil.test;
 public class StepsForTickertape {
 
     WebDriver driver = HooksStepDefinition.driver;
-    WebDriverWait wait;
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     ExtentUtil extentUtil = new ExtentUtil();
 
     @Test
@@ -196,27 +193,61 @@ public class StepsForTickertape {
     // Scenario: FIND TOP 5 GAINERS
 
     @When("User is on the Dashboard or Homepage")
-    public void userIsOnTheDashboardOrHomepage() {
+    public void userIsOnTheDashboardOrHomepage() throws InterruptedException {
+
+        WebElement searchInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]")));
+
+        WebElement element = driver.findElement(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(3000);
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Gainers");
+
 
     }
 
     @Then("top 5 gainers stock names should be displayed")
     public void display_top_5_gainers() {
-        // Implement retrieval and display of top 5 gainers' stock names
+
+        for (int i = 1; i <= 5; i++) {
+            // Locate each stock element by its index in the loop
+            WebElement stock = driver.findElement(By.xpath("(//span[@class='jsx-4123828227 typography-body-regular-xl text-primary mb4 d-block asset-name'])[" + i + "]"));
+
+            // Get the text of the stock and print it
+            String stockName = stock.getText();
+            System.out.println("Gainer Stock " + i + ": " + stockName);
+        }
+
     }
 
+    //=================================================================================================
 
     // Scenario: FIND TOP 5 LOSERS
-    @And("clicks on losers button on Today's stocks section")
-    public void clicksOnLosersButtonOnTodaySStocksSection() {
+    @When("clicks on losers button on Today's stocks section")
+    public void clicksOnLosersButtonOnTodaySStocksSection() throws InterruptedException {
+
+        WebElement searchInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]")));
+        driver.findElement(By.xpath("(//span[text()='Losers'])[1]")).click();
+
+        WebElement element = driver.findElement(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(3000);
+        Thread.sleep(2000);
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Losers");
+
     }
 
     @Then("top 5 losers stocks should be displayed")
     public void display_top_5_losers() {
-        // Implement retrieval and display of top 5 losers' stock names
-    }
+        for (int i = 1; i <= 5; i++) {
+            // Locate each stock element by its index in the loop
+            WebElement stock = driver.findElement(By.xpath("(//span[@class='jsx-4123828227 typography-body-regular-xl text-primary mb4 d-block asset-name'])[" + i + "]"));
 
+            // Get the text of the stock and print it
+            String stockName = stock.getText();
+            System.out.println("Loser Stock " + i + ": " + stockName);
+        }    }
 
+    //======================================================================================================
     // Scenario: OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP
     @When("User clicks on See All button on the Index section Then choose the Sectoral button")
     public void userClicksOnSeeAllButtonOnTheIndexSectionThenChooseTheSectoralButton() {
@@ -227,6 +258,7 @@ public class StepsForTickertape {
     public void print_nifty_it_price() {
         // Implement retrieval and print of Nifty IT price (LTP - Last Traded Price)
     }
+//======================================================================================================
 
 
     // Scenario: FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP
@@ -244,6 +276,8 @@ public class StepsForTickertape {
     public void pickFirstSmallStocksAndPrintThemWithMarketCap(int arg0) {
     }
 
+    //======================================================================================================
+
 
     // Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Mid Cap option from the left pane")
@@ -254,6 +288,7 @@ public class StepsForTickertape {
     @Then("Pick first {int} mid stocks and Print them with Market cap")
     public void pickFirstMidStocksAndPrintThemWithMarketCap(int arg0) {
     }
+//======================================================================================================
 
 
     // Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
@@ -270,3 +305,4 @@ public class StepsForTickertape {
 
 }
 
+//======================================================================================================

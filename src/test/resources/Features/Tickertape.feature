@@ -30,8 +30,7 @@ Feature: Tickertape Site Automation
   @TT_TestCase5 @TT_Regression
   Scenario: FIND TOP 5 LOSERS
     Given URL to the Tickertape site
-    When User is on the Dashboard or Homepage
-    And clicks on losers button on Today's stocks section
+    When clicks on losers button on Today's stocks section
     Then top 5 losers stocks should be displayed
 
   @TT_TestCase6 @TT_Regression

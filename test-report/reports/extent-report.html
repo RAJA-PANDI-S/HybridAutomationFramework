@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 20, 2024 09:34:23 pm</span></a>
+<a href="#"><span class="badge badge-primary">Oct 20, 2024 11:59:33 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@TV_Regression</a><a class="dropdown-item" href="#">@TV_TestCase2</a>
+<a class="dropdown-item" href="#">@TT_TestCase5</a><a class="dropdown-item" href="#">@TT_Regression</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Trading View Test Automation Scenarios</p>
+            <p class="name">Tickertape Site Automation</p>
             <p class="text-sm">
-              <span>9:34:24 pm</span> / <span>00:00:50:951</span>
+              <span>11:59:34 pm</span> / <span>00:00:20:913</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Trading View Test Automation Scenarios</h5>
-<span class='badge badge-success'>10.20.2024 9:34:24 pm</span>
-<span class='badge badge-danger'>10.20.2024 9:35:15 pm</span>
-<span class='badge badge-default'>00:00:50:951</span>
+<h5 class="test-status text-pass">Tickertape Site Automation</h5>
+<span class='badge badge-success'>10.20.2024 11:59:34 pm</span>
+<span class='badge badge-danger'>10.20.2024 11:59:55 pm</span>
+<span class='badge badge-default'>00:00:20:913</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,28 +116,23 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify that User a stock and view the chart</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>FIND TOP 5 LOSERS</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTradingView.url_to_the_trading_view_site()">
-                <span>Given URL to the TradingView site</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
+                <span>Given URL to the Tickertape site</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTradingView.user_clicks_on_search_bar()">
-                <span>When User Clicks on Search bar</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicksOnLosersButtonOnTodaySStocksSection()">
+                <span>When clicks on losers button on Today's stocks section</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTradingView.search_for_a_stock_and_hits_enter()">
-                <span>And Search for a stock and hits enter</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTradingView.chart_opens_with_a_candlestick_pattern_showing()">
-                <span>Then Chart opens with a candlestick pattern showing</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.display_top_5_losers()">
+                <span>Then top 5 losers stocks should be displayed</span>
       <div>
       </div>
               </div>
@@ -169,12 +164,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TV_Regression</p>
+<p class="name">@TT_TestCase5</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TV_Regression</h4>
+<h4>@TT_TestCase5</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -188,11 +183,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:34:24 pm</td>
+<td>23:59:34 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify that User a stock and view the chart</a>
+<a href="#" class="linked" test-id='1' id='2'>FIND TOP 5 LOSERS</a>
 <div class="">
-<span class="badge badge-default">Trading View Test Automation Scenarios.Verify that User a stock and view the chart</span>
+<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 LOSERS</span>
 </div>
 </td>
 </tr>
@@ -205,12 +200,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TV_TestCase2</p>
+<p class="name">@TT_Regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TV_TestCase2</h4>
+<h4>@TT_Regression</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -224,11 +219,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:34:24 pm</td>
+<td>23:59:34 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify that User a stock and view the chart</a>
+<a href="#" class="linked" test-id='1' id='2'>FIND TOP 5 LOSERS</a>
 <div class="">
-<span class="badge badge-default">Trading View Test Automation Scenarios.Verify that User a stock and view the chart</span>
+<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 LOSERS</span>
 </div>
 </td>
 </tr>
@@ -249,13 +244,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 20, 2024 09:34:23 pm</h3>
+<h3>Oct 20, 2024 11:59:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 20, 2024 09:35:16 pm</h3>
+<h3>Oct 20, 2024 11:59:55 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -326,7 +321,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -345,7 +340,7 @@
 </div></div>
 <script>
 var timeline = {
-"Trading View Test Automation Scenarios":50.951
+"Tickertape Site Automation":20.913
 };
 </script>
 <div class="row">
@@ -355,7 +350,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@TV_Regression</td>
+<td>@TT_TestCase5</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -363,7 +358,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TV_TestCase2</td>
+<td>@TT_Regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -390,7 +385,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 3,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
