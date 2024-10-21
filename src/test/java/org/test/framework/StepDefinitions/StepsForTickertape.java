@@ -27,8 +27,9 @@ public class StepsForTickertape {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     ExtentUtil extentUtil = new ExtentUtil();
 
+
     @Test
-    //Scenario: User searches Tickertape on Google and navigates to the site
+    //TT_TestCase1 - Scenario: User searches Tickertape on Google and navigates to the site
     @Given("User is on google homepage")
     public void user_is_on_google_homepage() {
         System.out.println("This is Step 1");
@@ -77,7 +78,7 @@ public class StepsForTickertape {
     //========================================================================================================//
 
     @Test
-    //Scenario: User searches stock on tickertape site
+    //TT_TestCase2 - Scenario: User searches stock on tickertape site
     @Given("URL to the Tickertape site")
     public void url_to_the_tickertape_site() {
         System.out.println("TC2_This is Step 1");
@@ -132,7 +133,7 @@ public class StepsForTickertape {
 
     //========================================================================================================//
 
-    //Scenario: Check the Market mood on MMI (Market Mood Index) screen
+    //TT_TestCase3 - Scenario: Check the Market mood on MMI (Market Mood Index) screen
     @Test
 
     @Given("URL to the Tickertape site to check MMI")
@@ -190,7 +191,7 @@ public class StepsForTickertape {
 
     //==============================================================================================
 
-    // Scenario: FIND TOP 5 GAINERS
+    //TT_TestCase4 - Scenario: FIND TOP 5 GAINERS
 
     @When("User is on the Dashboard or Homepage")
     public void userIsOnTheDashboardOrHomepage() throws InterruptedException {
@@ -221,7 +222,7 @@ public class StepsForTickertape {
 
     //=================================================================================================
 
-    // Scenario: FIND TOP 5 LOSERS
+    // TT_TestCase5 - Scenario: FIND TOP 5 LOSERS
     @When("clicks on losers button on Today's stocks section")
     public void clicksOnLosersButtonOnTodaySStocksSection() throws InterruptedException {
 
@@ -245,60 +246,101 @@ public class StepsForTickertape {
             // Get the text of the stock and print it
             String stockName = stock.getText();
             System.out.println("Loser Stock " + i + ": " + stockName);
-        }    }
+        }
+    }
 
     //======================================================================================================
-    // Scenario: OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP
+    //TT_TestCase6 - Scenario: OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP
     @When("User clicks on See All button on the Index section Then choose the Sectoral button")
     public void userClicksOnSeeAllButtonOnTheIndexSectionThenChooseTheSectoralButton() {
+        WebElement seeAll = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]")));
+        driver.findElement(By.xpath("(//a[text()='See All'])[1]")).click();
+
+        //span[@class='jsx-541417219 typography-body-medium-xs' and text()='Sectoral']
+        WebElement sectoralButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='jsx-541417219 typography-body-medium-xs' and text()='Sectoral']")));
+        driver.findElement(By.xpath("//span[@class='jsx-541417219 typography-body-medium-xs' and text()='Sectoral']")).click();
 
     }
 
     @Then("Nifty IT price should be printed")
     public void print_nifty_it_price() {
-        // Implement retrieval and print of Nifty IT price (LTP - Last Traded Price)
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app-container\"]/div/div[2]/div/div[1]/section/section/div/div/table/tbody/tr[9]/td[2]/span")));
+        WebElement ITName = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div[2]/div/div[1]/section/section/div/div/table/tbody/tr[9]/td[2]/span"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ITName);
+
+        WebElement ITPrice = driver.findElement(By.xpath("//*[@id=\"app-container\"]/div/div[2]/div/div[1]/section/section/div/div/table/tbody/tr[9]/td[4]/span[1]"));
+        System.out.println("=================================================");
+        System.out.println( ITName.getText() +" --> "+ ITPrice.getText());
+        System.out.println("=================================================");
+
     }
 //======================================================================================================
 
 
-    // Scenario: FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP
+    // TT_TestCase7 - Scenario: FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP
     @When("Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page")
     public void clicksOnScreenerMenuAndClicksOnStartScreeningOptionAndNavigatesToTheScreenerPage() {
+        driver.findElement(By.xpath("//a[contains(@href,'/screener/home')]")).click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Start Screening']")));
+        driver.findElement(By.xpath("//span[text()='Start Screening']")).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[text()='New Screen']")));
     }
 
     @When("Selects Small Cap option from the left pane")
     public void user_selects_small_cap_option() {
         // Implement selection of Small Cap option from the filter pane
+        driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[1]")).click();
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Small Cap Stocks List");
+
+
     }
 
-    @Then("Pick first {int} small stocks and Print them with Market cap")
+    @Then("Pick top 5 small cap stocks and Print them with Market cap")
     public void pickFirstSmallStocksAndPrintThemWithMarketCap(int arg0) {
+
+        for (int i = 1; i <= 5; i++) {
+            // Locate each stock element by its index in the loop
+            WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])["+ i +"]"));
+            WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])["+i+"]"));
+
+
+            // Get the text of the stock and print it
+            String Name = capName.getText();
+            String Price = capPrice.getText();
+
+            System.out.println("StockName: "+Name+" -- MarketCap: "+Price);
+        }
+
     }
 
     //======================================================================================================
 
 
-    // Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
+    // TT_TestCase8 - Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Mid Cap option from the left pane")
     public void user_selects_mid_cap_option() {
-        // Implement selection of Mid Cap option from the filter pane
+        driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[2]")).click();
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Mid Cap Stocks List");
     }
 
-    @Then("Pick first {int} mid stocks and Print them with Market cap")
+    @Then("Pick top 5 mid cap stocks and Print them with Market cap")
     public void pickFirstMidStocksAndPrintThemWithMarketCap(int arg0) {
     }
 //======================================================================================================
 
 
-    // Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
+    // TT_TestCase9 - Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Large Cap option from the left pane")
     public void user_selects_large_cap_option() {
-        // Implement selection of Large Cap option from the filter pane
+        driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[3]")).click();
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Large   Cap Stocks List");
     }
 
 
-    @Then("Pick first {int} large stocks and Print them with Market cap")
+    @Then("Pick top 5 large cap stocks and Print them with Market cap")
     public void pickFirstLargeStocksAndPrintThemWithMarketCap(int arg0) {
 
     }
