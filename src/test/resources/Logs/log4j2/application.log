@@ -132,3 +132,19 @@
 2024-10-21 22:08:24 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
 2024-10-21 23:03:52 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-10-21 23:04:47 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-22 09:36:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-22 09:37:33 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-22 09:39:04 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-22 09:39:55 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-23 07:24:39 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-23 07:25:34 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-23 07:37:16 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-23 07:38:05 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-10-23 07:38:05 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-10-23 07:38:07 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-10-23 07:38:09 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-23 07:41:30 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-23 07:42:19 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-10-23 07:42:19 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-10-23 07:42:24 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-10-23 07:42:26 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

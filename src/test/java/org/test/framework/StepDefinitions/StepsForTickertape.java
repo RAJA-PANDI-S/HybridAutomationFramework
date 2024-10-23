@@ -11,6 +11,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
+import org.test.framework.Utilities.LoggerUtil;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 //
@@ -286,20 +287,27 @@ public class StepsForTickertape {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Start Screening']")));
         driver.findElement(By.xpath("//span[text()='Start Screening']")).click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[text()='New Screen']")));
+        user_navigates_to_mmi_page();
+        LoggerUtil.info("Navigated to Screener Page");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        LoggerUtil.info("Wait completed on Screener Page");
+
+
     }
 
     @When("Selects Small Cap option from the left pane")
-    public void user_selects_small_cap_option() {
-        // Implement selection of Small Cap option from the filter pane
+    public void user_selects_small_cap_option() throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[1]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[1]")).click();
+        Thread.sleep(3000);
         TakeSnapshot snapshot = new TakeSnapshot(driver, "Small Cap Stocks List");
+        LoggerUtil.info("Screenshot Captured Successfully...!");
 
 
     }
 
     @Then("Pick top 5 small cap stocks and Print them with Market cap")
-    public void pickFirstSmallStocksAndPrintThemWithMarketCap(int arg0) {
+    public void pickFirstSmallStocksAndPrintThemWithMarketCap() {
 
         for (int i = 1; i <= 5; i++) {
             // Locate each stock element by its index in the loop
