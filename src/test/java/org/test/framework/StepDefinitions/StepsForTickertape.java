@@ -329,30 +329,61 @@ public class StepsForTickertape {
 
     // TT_TestCase8 - Scenario: FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Mid Cap option from the left pane")
-    public void user_selects_mid_cap_option() {
+    public void user_selects_mid_cap_option() throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[2]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[2]")).click();
+        Thread.sleep(3000);
         TakeSnapshot snapshot = new TakeSnapshot(driver, "Mid Cap Stocks List");
+        LoggerUtil.info("Screenshot Captured Successfully...!");
     }
 
     @Then("Pick top 5 mid cap stocks and Print them with Market cap")
-    public void pickFirstMidStocksAndPrintThemWithMarketCap(int arg0) {
+    public void pickFirstMidStocksAndPrintThemWithMarketCap() {
+
+        for (int i = 1; i <= 5; i++) {
+            // Locate each stock element by its index in the loop
+            WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])[" + i + "]"));
+            WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])[" + i + "]"));
+
+
+            // Get the text of the stock and print it
+            String Name = capName.getText();
+            String Price = capPrice.getText();
+
+            System.out.println("StockName: " + Name + " -- MarketCap: " + Price);
+        }
     }
 //======================================================================================================
 
 
     // TT_TestCase9 - Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Large Cap option from the left pane")
-    public void user_selects_large_cap_option() {
+    public void user_selects_large_cap_option() throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[3]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[3]")).click();
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Large   Cap Stocks List");
+        Thread.sleep(3000);
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "Large Cap Stocks List");
+        LoggerUtil.info("Screenshot Captured Successfully...!");
     }
 
 
     @Then("Pick top 5 large cap stocks and Print them with Market cap")
-    public void pickFirstLargeStocksAndPrintThemWithMarketCap(int arg0) {
+    public void pickFirstLargeStocksAndPrintThemWithMarketCap() {
 
+        for (int i = 1; i <= 5; i++) {
+            // Locate each stock element by its index in the loop
+            WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])[" + i + "]"));
+            WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])[" + i + "]"));
+
+
+            // Get the text of the stock and print it
+            String Name = capName.getText();
+            String Price = capPrice.getText();
+
+            System.out.println("StockName: " + Name + " -- MarketCap: " + Price);
+
+        }
     }
-
 }
 
 //======================================================================================================
