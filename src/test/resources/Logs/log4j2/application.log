@@ -195,3 +195,56 @@
 2024-10-24 08:50:27 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
 2024-10-24 08:50:32 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
 2024-10-24 08:50:33 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:39:04 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:40:21 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:40:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:41:35 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:41:37 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:42:39 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:42:41 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:43:47 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:43:49 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:44:48 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:44:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:45:46 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:45:48 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:46:48 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-10-26 21:46:48 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-10-26 21:46:53 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-10-26 21:46:54 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:46:56 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:47:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-10-26 21:47:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-10-26 21:47:55 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-10-26 21:47:56 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:47:58 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:48:51 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-10-26 21:48:51 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-10-26 21:48:56 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-10-26 21:48:58 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:52:32 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:52:42 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:52:44 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 21:52:46 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 21:52:47 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:29:28 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:30:27 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 22:30:29 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:31:47 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TradingView TestCase 2 completed Successfully
+2024-10-26 22:31:49 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 22:33:27 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:34:11 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 22:34:13 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:35:54 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TradingView TestCase 2 completed Successfully
+2024-10-26 22:35:55 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 22:56:43 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 22:57:39 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 22:57:42 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 23:00:44 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 23:01:27 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 23:01:54 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | Sign In option clicked Successfully
+2024-10-26 23:02:06 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TradingView TestCase 1 completed Successfully
+2024-10-26 23:02:08 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-10-26 23:02:10 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-10-26 23:02:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TradingView TestCase 2 completed Successfully
+2024-10-26 23:02:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

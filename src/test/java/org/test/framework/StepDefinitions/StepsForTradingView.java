@@ -44,10 +44,13 @@ public class StepsForTradingView {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//span[@class='label-mDJVFqQ3 label-jFqVJoPk label-mDJVFqQ3 label-YQGjel_5 js-main-menu-dropdown-link-title']")).click();
         Thread.sleep(3000);
+        LoggerUtil.info("Sign In option clicked Successfully");
     }
 
     @When("Selects Email option to login")
     public void selects_email_option_to_login() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@name='Email']")));
+
         driver.findElement(By.xpath("//button[@name='Email']")).click();
 
     }
@@ -127,7 +130,7 @@ public class StepsForTradingView {
         // driver.findElement(By.xpath("//span[contains(text(),\"Sign in\")]")).click();
         Thread.sleep(3000);
         String actualTitle = driver.getTitle();
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "TradingView_Loginpage");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TradingView_LoginScreen");
         //String expectedTitle = "";
         //Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
         System.out.println("==========================================================================");
