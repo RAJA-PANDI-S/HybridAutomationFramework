@@ -302,3 +302,17 @@
 2024-11-02 13:16:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
 2024-11-02 13:16:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC09 Passed - Top 5 Large cap stocks are verified successfully
 2024-11-02 13:16:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 17:46:24 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 17:46:59 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 17:47:52 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 17:49:08 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 17:53:04 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 17:54:17 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 22:13:53 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 22:16:19 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 22:18:18 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 22:20:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 22:21:24 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 22:23:26 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 22:31:19 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 22:33:12 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

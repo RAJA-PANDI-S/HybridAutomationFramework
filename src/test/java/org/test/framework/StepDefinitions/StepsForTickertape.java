@@ -28,7 +28,6 @@ public class StepsForTickertape {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     ExtentUtil extentUtil = new ExtentUtil();
 
-
     @Test
     //TT_TestCase1 - Scenario: User searches Tickertape on Google and navigates to the site
     @Given("User is on google homepage")

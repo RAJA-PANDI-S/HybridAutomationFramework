@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 2, 2024 01:12:58 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 2, 2024 10:31:15 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@TT_Regression</a><a class="dropdown-item" href="#">@TT_TestCase9</a><a class="dropdown-item" href="#">@TT_TestCase1</a><a class="dropdown-item" href="#">@TT_TestCase5</a><a class="dropdown-item" href="#">@TT_TestCase8</a><a class="dropdown-item" href="#">@TT_TestCase4</a><a class="dropdown-item" href="#">@TT_TestCase6</a><a class="dropdown-item" href="#">@TT_TestCase2</a><a class="dropdown-item" href="#">@TT_TestCase3</a><a class="dropdown-item" href="#">@TT_TestCase7</a>
+<a class="dropdown-item" href="#">@YF_TestCase2</a><a class="dropdown-item" href="#">@YF_Regression</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Tickertape Site Automation</p>
+            <p class="name">Yahoo Finance Test Automation Scenarios</p>
             <p class="text-sm">
-              <span>1:12:59 pm</span> / <span>00:03:50:614</span>
+              <span>10:31:16 pm</span> / <span>00:01:55:764</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,10 +100,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Tickertape Site Automation</h5>
-<span class='badge badge-success'>11.02.2024 1:12:59 pm</span>
-<span class='badge badge-danger'>11.02.2024 1:16:50 pm</span>
-<span class='badge badge-default'>00:03:50:614</span>
+<h5 class="test-status text-pass">Yahoo Finance Test Automation Scenarios</h5>
+<span class='badge badge-success'>11.02.2024 10:31:16 pm</span>
+<span class='badge badge-danger'>11.02.2024 10:33:12 pm</span>
+<span class='badge badge-default'>00:01:55:764</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,261 +116,28 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User searches Tickertape on Google and navigates to the site</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the close price of a stock on last trading session</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_is_on_google_homepage()">
-                <span>Given User is on google homepage</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.open_yahoo_finance_site()">
+                <span>Given URL to the Yahoo Finance site</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_enters_tickertape_in_search_bar()">
-                <span>When User enters Tickertape in search bar</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.user_search_for_a_stock()">
+                <span>When User search for a stock on search bar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicks_enter()">
-                <span>And Clicks enter</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.user_selects_historical_data_option()">
+                <span>And Chooses Historical Data option</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_clicks_on_the_link_of_tickertape_site()">
-                <span>Then User clicks on the link of tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_is_able_to_enter_the_site_and_verify_title()">
-                <span>And User is able to enter the site and verify title</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User searches stock on tickertape site</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_search_a_stock_on_search_bar()">
-                <span>When User search a stock on Search bar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_should_see_the_ltp_of_the_stock()">
-                <span>Then User should see the LTP of the stock</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Check the Market mood on MMI (Market Mood Index) screen</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site_to_check_mmi()">
-                <span>Given URL to the Tickertape site to check MMI</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_clicks_on_the_mmi_link_on_homepage()">
-                <span>When User clicks on the MMI link on homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_navigates_to_mmi_page()">
-                <span>And User navigates to MMI page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_should_know_the_mood_of_market_by_seeing_the_meter()">
-                <span>Then User should know the mood of market by seeing the meter</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>FIND TOP 5 GAINERS</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.userIsOnTheDashboardOrHomepage()">
-                <span>When User is on the Dashboard or Homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.display_top_5_gainers()">
-                <span>Then top 5 gainers stock names should be displayed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>FIND TOP 5 LOSERS</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicksOnLosersButtonOnTodaySStocksSection()">
-                <span>When clicks on losers button on Today's stocks section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.display_top_5_losers()">
-                <span>Then top 5 losers stocks should be displayed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.userClicksOnSeeAllButtonOnTheIndexSectionThenChooseTheSectoralButton()">
-                <span>When User clicks on See All button on the Index section Then choose the Sectoral button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.print_nifty_it_price()">
-                <span>And Nifty IT price should be printed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicksOnScreenerMenuAndClicksOnStartScreeningOptionAndNavigatesToTheScreenerPage()">
-                <span>When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_selects_small_cap_option()">
-                <span>And Selects Small Cap option from the left pane</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.pickFirstSmallStocksAndPrintThemWithMarketCap()">
-                <span>Then Pick top 5 small cap stocks and Print them with Market cap</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicksOnScreenerMenuAndClicksOnStartScreeningOptionAndNavigatesToTheScreenerPage()">
-                <span>When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_selects_mid_cap_option()">
-                <span>And Selects Mid Cap option from the left pane</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.pickFirstMidStocksAndPrintThemWithMarketCap()">
-                <span>Then Pick top 5 mid cap stocks and Print them with Market cap</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.url_to_the_tickertape_site()">
-                <span>Given URL to the Tickertape site</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicksOnScreenerMenuAndClicksOnStartScreeningOptionAndNavigatesToTheScreenerPage()">
-                <span>When Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_selects_large_cap_option()">
-                <span>And Selects Large Cap option from the left pane</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.pickFirstLargeStocksAndPrintThemWithMarketCap()">
-                <span>Then Pick top 5 large cap stocks and Print them with Market cap</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.user_should_see_close_price_on_date()">
+                <span>Then User should see the close price of a stock on last trading session</span>
       <div>
       </div>
               </div>
@@ -393,183 +160,21 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">11</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@Smoke</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:12:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:13:33 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>User searches stock on tickertape site</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches stock on tickertape site</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>9</span>
-</span>
-<p class="name">@TT_Regression</p>
-<p class="duration text-sm">9 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_Regression</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:12:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:13:33 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>User searches stock on tickertape site</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches stock on tickertape site</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:14:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='19'>Check the Market mood on MMI (Market Mood Index) screen</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.Check the Market mood on MMI (Market Mood Index) screen</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:14:45 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='26'>FIND TOP 5 GAINERS</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 GAINERS</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='33'>FIND TOP 5 LOSERS</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 LOSERS</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:35 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='40'>OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:48 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='47'>FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='55'>FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='63'>FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TT_TestCase9</p>
+<p class="name">@YF_TestCase2</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TT_TestCase9</h4>
+<h4>@YF_TestCase2</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -583,11 +188,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:31 pm</td>
+<td>22:31:16 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='63'>FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify the close price of a stock on last trading session</a>
 <div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP</span>
+<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify the close price of a stock on last trading session</span>
 </div>
 </td>
 </tr>
@@ -600,12 +205,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TT_TestCase1</p>
+<p class="name">@YF_Regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TT_TestCase1</h4>
+<h4>@YF_Regression</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -619,263 +224,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:12:59 pm</td>
+<td>22:31:16 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify the close price of a stock on last trading session</a>
 <div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase5</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase5</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='33'>FIND TOP 5 LOSERS</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 LOSERS</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase8</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase8</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:16:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='55'>FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 MID CAP STOCKS IN TERMS OF MARKET CAP</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase4</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase4</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:14:45 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='26'>FIND TOP 5 GAINERS</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FIND TOP 5 GAINERS</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase6</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase6</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:35 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='40'>OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.OPEN SITE, CLICK SEE ALL, GET NIFTY IT LTP</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase2</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase2</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:13:33 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>User searches stock on tickertape site</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.User searches stock on tickertape site</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase3</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase3</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:14:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='19'>Check the Market mood on MMI (Market Mood Index) screen</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.Check the Market mood on MMI (Market Mood Index) screen</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TT_TestCase7</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TT_TestCase7</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:48 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='47'>FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP</a>
-<div class="">
-<span class="badge badge-default">Tickertape Site Automation.FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP</span>
+<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify the close price of a stock on last trading session</span>
 </div>
 </td>
 </tr>
@@ -896,13 +249,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 2, 2024 01:12:58 pm</h3>
+<h3>Nov 2, 2024 10:31:15 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 2, 2024 01:16:50 pm</h3>
+<h3>Nov 2, 2024 10:33:12 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -953,7 +306,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -973,7 +326,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>33</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -992,7 +345,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tickertape Site Automation":230.614
+"Yahoo Finance Test Automation Scenarios":115.764
 };
 </script>
 <div class="row">
@@ -1002,23 +355,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Smoke</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_Regression</td>
-<td>9</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase9</td>
+<td>@YF_TestCase2</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1026,63 +363,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TT_TestCase1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase5</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase8</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase4</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase6</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase3</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TT_TestCase7</td>
+<td>@YF_Regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1103,13 +384,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 9,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 33,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,

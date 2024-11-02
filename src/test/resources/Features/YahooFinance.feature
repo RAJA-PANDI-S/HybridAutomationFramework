@@ -8,11 +8,11 @@ Feature: Yahoo Finance Test Automation Scenarios
   Then a tooltip should display with percentage value
 
   @YF_TestCase2 @YF_Regression
-  Scenario: Verify the close price of a stock on OCT 15,2024
+  Scenario: Verify the close price of a stock on last trading session
   Given URL to the Yahoo Finance site
   When User search for a stock on search bar
   And Chooses Historical Data option
-  Then User should see the close price of a stock on Oct 15, 2024
+  Then User should see the close price of a stock on last trading session
 
   @YF_TestCase3 @YF_Regression
   Scenario: Validate and compare 2 stocks and get which has highest market cap
