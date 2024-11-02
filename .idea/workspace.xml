@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Tickertape TC8 and TC9 Fixed and Working fine.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Refactor and Screenshots.png update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/test/framework/Helper/TakeSnapshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/test/framework/Helper/TakeSnapshot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTickertape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Gainers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Gainers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Large Cap Stocks List.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Large Cap Stocks List.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Losers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Losers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Market_Zone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Market_Zone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Mid Cap Stocks List.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Mid Cap Stocks List.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Small Cap Stocks List.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Small Cap Stocks List.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/TradingView_Chart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/TradingView_Chart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Gainers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Large Cap Stocks List.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Losers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Market_Zone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Mid Cap Stocks List.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Small Cap Stocks List.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/TradingView_Chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/TradingView_Loginpage.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
@@ -491,7 +494,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729741351750</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Refactor and Screenshots.png update">
+      <option name="closed" value="true" />
+      <created>1730481557583</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730481557583</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="No error in POM.XML" />
     <MESSAGE value="Initial Progress made" />
     <MESSAGE value="Code written for 1st Test Case" />
     <MESSAGE value="samll fix + Error op added" />
@@ -531,6 +541,7 @@
     <MESSAGE value="Tickertape TC6 and TC7 added." />
     <MESSAGE value="Tickertape TC7 Fixed and Working fine." />
     <MESSAGE value="Tickertape TC8 and TC9 Fixed and Working fine." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickertape TC8 and TC9 Fixed and Working fine." />
+    <MESSAGE value="Refactor and Screenshots.png update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor and Screenshots.png update" />
   </component>
 </project>

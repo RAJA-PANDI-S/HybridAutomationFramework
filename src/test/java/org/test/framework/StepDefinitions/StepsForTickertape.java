@@ -37,7 +37,7 @@ public class StepsForTickertape {
         driver.navigate().to("http://www.google.com/");
         driver.manage().window().maximize();
         System.out.println("Google Started at \t{}" + Instant.now());
-        extentUtil.extentCreateTest("Tc01_Homepage");
+        extentUtil.extentCreateTest("TC01_Enter Google Chrome");
         test.pass("Step 1 Passed");
 
     }
@@ -46,7 +46,7 @@ public class StepsForTickertape {
     public void user_enters_tickertape_in_search_bar() {
         System.out.println("This is Step 2");
         driver.findElement(By.xpath("//*[@id=\"APjFqb\"]")).sendKeys("tickertape.in");
-        extentUtil.extentCreateTest("TC01_Verify Home Page");
+        extentUtil.extentCreateTest("TC01_Search for Tickertape.in");
         test.pass("Step 2 Passed");
     }
 
@@ -74,6 +74,8 @@ public class StepsForTickertape {
         //content="Stock Analysis & Best Financial Tools for Indian Stock Market Evaluation | Tickertape"
         Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
         System.out.println(actualTitle);
+
+        LoggerUtil.info("TT_TC01 Passed - Title matches successfully");
     }
 
     //========================================================================================================//
@@ -126,9 +128,8 @@ public class StepsForTickertape {
         System.out.println("Text inside the element Percentage: " + StockPer);
         System.out.println("Text inside the element StockName: " + StockNm);
 
+        LoggerUtil.info("TT_TC02 Passed - Stock details captured successfully");
 
-        //  float LTPofITC = Float.valueOf(ITCPrice.trim());  // Remove any leading/trailing spaces with .trim()
-        // System.out.println("Text inside the element: " + LTPofITC);
     }
 
 
@@ -163,7 +164,6 @@ public class StepsForTickertape {
                 break;
             }
         }
-
     }
 
     @Then("User should know the mood of market by seeing the meter")
@@ -174,7 +174,7 @@ public class StepsForTickertape {
         float marketMood = Float.valueOf(Index.trim());  // Remove any leading/trailing spaces with .trim()
 
         System.out.println("Market Meter shows the value: " + marketMood);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Market_Zone");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC03_MMIMarketZone");
 
         if (marketMood < 30) {
             System.out.println("THE MARKET IS IN EXTREME FEAR ZONE");
@@ -188,6 +188,7 @@ public class StepsForTickertape {
             System.out.println("Market mood value is out of expected range!");
         }
 
+        LoggerUtil.info("TT_TC03 Passed - MMI Range Identified and Captured snapshot");
     }
 
     //==============================================================================================
@@ -202,9 +203,7 @@ public class StepsForTickertape {
         WebElement element = driver.findElement(By.xpath("(//section[@class='jsx-1019738436 stock-t-container'])[1]"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         Thread.sleep(3000);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Gainers");
-
-
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC04_Gainers");
     }
 
     @Then("top 5 gainers stock names should be displayed")
@@ -218,6 +217,7 @@ public class StepsForTickertape {
             String stockName = stock.getText();
             System.out.println("Gainer Stock " + i + ": " + stockName);
         }
+        LoggerUtil.info("TT_TC04 Passed - Listed Top 5 Gainers of the day");
 
     }
 
@@ -234,7 +234,7 @@ public class StepsForTickertape {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         Thread.sleep(3000);
         Thread.sleep(2000);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Losers");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC05_Losers");
 
     }
 
@@ -248,6 +248,8 @@ public class StepsForTickertape {
             String stockName = stock.getText();
             System.out.println("Loser Stock " + i + ": " + stockName);
         }
+        LoggerUtil.info("TT_TC05 Passed - Listed Top 5 Losers of the day");
+
     }
 
     //======================================================================================================
@@ -275,9 +277,10 @@ public class StepsForTickertape {
         System.out.println( ITName.getText() +" --> "+ ITPrice.getText());
         System.out.println("=================================================");
 
+        LoggerUtil.info("TT_TC06 Passed - Price of NIFTY IT printed as expected");
+
     }
 //======================================================================================================
-
 
     // TT_TestCase7 - Scenario: FILTER THE TOP 5 SMALL CAP STOCKS IN TERMS OF MARKET CAP
     @When("Clicks on Screener menu and Clicks on Start Screening Option And Navigates to the Screener page")
@@ -288,11 +291,7 @@ public class StepsForTickertape {
         driver.findElement(By.xpath("//span[text()='Start Screening']")).click();
 
         user_navigates_to_mmi_page();
-        LoggerUtil.info("Navigated to Screener Page");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        LoggerUtil.info("Wait completed on Screener Page");
-
-
     }
 
     @When("Selects Small Cap option from the left pane")
@@ -300,10 +299,7 @@ public class StepsForTickertape {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[1]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[1]")).click();
         Thread.sleep(3000);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Small Cap Stocks List");
-        LoggerUtil.info("Screenshot Captured Successfully...!");
-
-
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC07_SmallCapStocksList");
     }
 
     @Then("Pick top 5 small cap stocks and Print them with Market cap")
@@ -314,14 +310,13 @@ public class StepsForTickertape {
             WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])["+ i +"]"));
             WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])["+i+"]"));
 
-
             // Get the text of the stock and print it
             String Name = capName.getText();
             String Price = capPrice.getText();
 
             System.out.println("StockName: "+Name+" -- MarketCap: "+Price);
         }
-
+        LoggerUtil.info("TT_TC07 Passed - Top 5 Small cap stocks are verified successfully");
     }
 
     //======================================================================================================
@@ -333,8 +328,7 @@ public class StepsForTickertape {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[2]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[2]")).click();
         Thread.sleep(3000);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Mid Cap Stocks List");
-        LoggerUtil.info("Screenshot Captured Successfully...!");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC08_MidCapStocksList");
     }
 
     @Then("Pick top 5 mid cap stocks and Print them with Market cap")
@@ -345,16 +339,15 @@ public class StepsForTickertape {
             WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])[" + i + "]"));
             WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])[" + i + "]"));
 
-
             // Get the text of the stock and print it
             String Name = capName.getText();
             String Price = capPrice.getText();
-
             System.out.println("StockName: " + Name + " -- MarketCap: " + Price);
         }
+        LoggerUtil.info("TT_TC08 Passed - Top 5 Mid cap stocks are verified successfully");
+
     }
 //======================================================================================================
-
 
     // TT_TestCase9 - Scenario: FILTER THE TOP 5 LARGE CAP STOCKS IN TERMS OF MARKET CAP
     @When("Selects Large Cap option from the left pane")
@@ -362,10 +355,9 @@ public class StepsForTickertape {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@type='radio' and @name='segment-radio'])[3]")));
         driver.findElement(By.xpath("(//input[@type='radio' and @name='segment-radio'])[3]")).click();
         Thread.sleep(3000);
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "Large Cap Stocks List");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TT_TC09_LargeCapStocksList");
         LoggerUtil.info("Screenshot Captured Successfully...!");
     }
-
 
     @Then("Pick top 5 large cap stocks and Print them with Market cap")
     public void pickFirstLargeStocksAndPrintThemWithMarketCap() {
@@ -375,14 +367,12 @@ public class StepsForTickertape {
             WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])[" + i + "]"));
             WebElement capPrice = driver.findElement(By.xpath("(//td[@class='jsx-427622308 mrktCapf-col  text-right']/span/span[@class='jsx-427622308 desktop--only'])[" + i + "]"));
 
-
             // Get the text of the stock and print it
             String Name = capName.getText();
             String Price = capPrice.getText();
-
             System.out.println("StockName: " + Name + " -- MarketCap: " + Price);
-
         }
+        LoggerUtil.info("TT_TC09 Passed - Top 5 Large cap stocks are verified successfully");
     }
 }
 

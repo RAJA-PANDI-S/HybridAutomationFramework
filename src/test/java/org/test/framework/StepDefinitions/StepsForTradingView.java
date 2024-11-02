@@ -23,19 +23,16 @@ import java.util.List;
 
 public class StepsForTradingView {
     WebDriver driver = HooksStepDefinition.driver;
-    //WebDriverWait wait;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-
     @Test
-    //TEST CASE 1
+    // TV_TestCase1 - Scenario: Verify that User login to the Trading view site and Validate successful login
     @Given("URL to the TradingView site")
     public void url_to_the_trading_view_site() {
         System.out.println("This is Step 1");
         driver.navigate().to("https://in.tradingview.com/");
         driver.manage().window().maximize();
         System.out.println("Site opened at \t" + Instant.now());
-
     }
 
     @When("User Clicks on Profile icon and Chooses Sign in option")
@@ -44,15 +41,12 @@ public class StepsForTradingView {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//span[@class='label-mDJVFqQ3 label-jFqVJoPk label-mDJVFqQ3 label-YQGjel_5 js-main-menu-dropdown-link-title']")).click();
         Thread.sleep(3000);
-        LoggerUtil.info("Sign In option clicked Successfully");
     }
 
     @When("Selects Email option to login")
     public void selects_email_option_to_login() {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@name='Email']")));
-
         driver.findElement(By.xpath("//button[@name='Email']")).click();
-
     }
 
     @Then("Login page appears where User enters Username and Password")
@@ -75,7 +69,6 @@ public class StepsForTradingView {
         WebElement PasswordField = driver.findElement(By.xpath("//input[@name='id_password']"));
         PasswordField.click();
         PasswordField.sendKeys(decryptedPassword);
-
     }
 
     @Then("User clicks sign in button and able to login successfully")
@@ -83,21 +76,6 @@ public class StepsForTradingView {
 
         driver.findElement(By.xpath("//span[contains(text(),\"Sign in\")]")).click();
         Thread.sleep(2000);
-/*
-        // Switch to the reCAPTCHA iframe
-        WebElement captchaFrame = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@title='reCAPTCHA' and @name='a-r5xxv8xxba1t']")));
-        //WebElement captchaFrame = driver.findElement(By.xpath("//iframe[@title='reCAPTCHA' and @name='a-r5xxv8xxba1t']"));
-        driver.switchTo().frame(captchaFrame);
-        Thread.sleep(2000);
-
-        // Locate the "I'm not a robot" checkbox and click it
-        WebElement captchaCheckbox = driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-checkmark']"));
-        captchaCheckbox.click();
-        Thread.sleep(3000);
-
-        // Switch back to the default content
-        driver.switchTo().defaultContent();
-*/
 
         // Locate and loop through all iframes
         List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
@@ -130,25 +108,20 @@ public class StepsForTradingView {
         // driver.findElement(By.xpath("//span[contains(text(),\"Sign in\")]")).click();
         Thread.sleep(3000);
         String actualTitle = driver.getTitle();
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "TradingView_LoginScreen");
-        //String expectedTitle = "";
-        //Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TV_TC01_LoginScreen");
         System.out.println("==========================================================================");
         System.out.println(actualTitle);
         System.out.println("==========================================================================");
-        //logger.info("Test 1 completed Successfully");
-        LoggerUtil.info("TradingView TestCase 1 completed Successfully");
+        LoggerUtil.info("TV_TC01 Passed - Logged in Successfully to the TradingView Site");
     }
 
-    //============================================================================================
+    //============================================================================================================//
 
-    //TEST CASE 2
-
+    //TV_TestCase2 - Scenario: Verify that User a stock and view the chart
     @When("User Clicks on Search bar")
     public void user_clicks_on_search_bar() throws InterruptedException {
         driver.findElement(By.xpath("//span[@class='searchText-PCujdK9L']")).click();
         Thread.sleep(3000);
-
     }
 
     @When("Search for a stock and hits enter")
@@ -168,19 +141,14 @@ public class StepsForTradingView {
     @Then("Chart opens with a candlestick pattern showing")
     public void chart_opens_with_a_candlestick_pattern_showing() {
 
-        //button[text()='STATE BANK OF INDIA']
-        WebElement searchInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='STATE BANK OF INDIA']")));
-
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='STATE BANK OF INDIA']")));
         String actualTitle = driver.getTitle();
-        TakeSnapshot snapshot = new TakeSnapshot(driver, "TradingView_Chart");
-        //String expectedTitle = "";
-        //Assert.assertEquals(actualTitle, expectedTitle, "Title does not match the expected value!");
+        TakeSnapshot snapshot = new TakeSnapshot(driver, "TV_TC02_PriceChartOfSBIN");
         System.out.println("==========================================================================");
         System.out.println(actualTitle);
         System.out.println("==========================================================================");
-        //logger.info("Test 1 completed Successfully");
-        LoggerUtil.info("TradingView TestCase 2 completed Successfully");
-
+        LoggerUtil.info("TV_TC02 Passed - Viewed SBIN Price Chart and Snapshot captured");
     }
-
 }
+
+//============================================================================================================//

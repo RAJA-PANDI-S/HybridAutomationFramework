@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber/report/report.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "junit:target/cucumber/report/report.xml"},
-        tags = "@TV_Regression",
+        tags = "@TT_Regression",
         //  plugin = {"tech.grasshopper.extent.cucumber6.adapter.ExtentCucumberAdapter:"},
         monochrome = true
 )

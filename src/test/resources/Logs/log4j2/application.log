@@ -248,3 +248,57 @@
 2024-10-26 23:02:10 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-10-26 23:02:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TradingView TestCase 2 completed Successfully
 2024-10-26 23:02:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 12:23:10 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 12:23:30 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 12:27:57 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 12:28:16 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:05:41 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:06:00 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | Sign In option clicked Successfully
+2024-11-02 13:06:07 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC01 Passed - Logged in Successfully to the TradingView Site
+2024-11-02 13:06:09 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:06:11 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:06:59 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC02 Passed - Viewed SBIN Price Chart and Snapshot captured
+2024-11-02 13:07:00 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:09:52 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:10:12 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | Sign In option clicked Successfully
+2024-11-02 13:10:20 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC01 Passed - Logged in Successfully to the TradingView Site
+2024-11-02 13:10:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:10:25 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:11:23 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC02 Passed - Viewed SBIN Price Chart and Snapshot captured
+2024-11-02 13:11:24 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:13:02 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:13:30 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC01 Passed - Title matches successfully
+2024-11-02 13:13:32 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:13:34 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:14:02 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC02 Passed - Stock details captured successfully
+2024-11-02 13:14:03 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:14:05 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:14:44 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC03 Passed - MMI Range Identified and Captured snapshot
+2024-11-02 13:14:45 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:14:47 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:15:13 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC04 Passed - Listed Top 5 Gainers of the day
+2024-11-02 13:15:14 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:15:16 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:15:34 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC05 Passed - Listed Top 5 Losers of the day
+2024-11-02 13:15:35 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:15:37 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:15:47 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC06 Passed - Price of NIFTY IT printed as expected
+2024-11-02 13:15:48 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:15:49 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:16:02 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-11-02 13:16:02 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-11-02 13:16:07 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-11-02 13:16:07 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC07 Passed - Top 5 Small cap stocks are verified successfully
+2024-11-02 13:16:08 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:16:10 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:16:23 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-11-02 13:16:23 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-11-02 13:16:29 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-11-02 13:16:29 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC08 Passed - Top 5 Mid cap stocks are verified successfully
+2024-11-02 13:16:31 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-02 13:16:33 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-02 13:16:43 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Navigated to Screener Page
+2024-11-02 13:16:43 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Wait completed on Screener Page
+2024-11-02 13:16:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-11-02 13:16:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC09 Passed - Top 5 Large cap stocks are verified successfully
+2024-11-02 13:16:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

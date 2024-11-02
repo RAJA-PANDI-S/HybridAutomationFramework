@@ -10,7 +10,7 @@ import java.io.IOException;
 public class TakeSnapshot {
     public TakeSnapshot(WebDriver driver, String fileName) {
         // Create a path inside the project for screenshots
-        String filePath = "C:\\Users\\Raja\\IntellijProjects\\HybridAutomationFramework\\src\\test\\resources\\Logs";
+        String filePath = "C:\\Users\\Raja\\IntellijProjects\\HybridAutomationFramework\\src\\test\\resources\\Logs\\Snapshots";
 
         // Take the screenshot
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
