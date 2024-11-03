@@ -351,3 +351,9 @@
 2024-11-03 19:26:09 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-11-03 19:27:50 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
 2024-11-03 19:27:53 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-03 19:39:39 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-03 19:41:21 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
+2024-11-03 19:41:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-03 19:44:40 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-03 19:46:26 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
+2024-11-03 19:46:28 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

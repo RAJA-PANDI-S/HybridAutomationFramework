@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="YF_TC03 and TC04 completed Update.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment=".feature files updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Tickertape.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Tickertape.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/YahooFinance.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/YahooFinance.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-pdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-report/reports/extent-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730642541483</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary=".feature files updated.">
+      <option name="closed" value="true" />
+      <created>1730642769540</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1730642769540</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TC2,TC3 added and Working fine." />
     <MESSAGE value="Screenshot code added - TakeSnapshot.java" />
     <MESSAGE value="Extent configs added - properties,xml,runner,dependancy for cucumber6. Basic report generated." />
     <MESSAGE value="All 3 Test Cases are working perfectly." />
@@ -561,6 +571,7 @@
     <MESSAGE value="YF_TC01 and TC02 completed. TC03 Inprogress." />
     <MESSAGE value="YF_TC03 and TC04 completed." />
     <MESSAGE value="YF_TC03 and TC04 completed Update." />
-    <option name="LAST_COMMIT_MESSAGE" value="YF_TC03 and TC04 completed Update." />
+    <MESSAGE value=".feature files updated." />
+    <option name="LAST_COMMIT_MESSAGE" value=".feature files updated." />
   </component>
 </project>

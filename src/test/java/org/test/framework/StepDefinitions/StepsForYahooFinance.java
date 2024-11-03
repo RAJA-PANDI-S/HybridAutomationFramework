@@ -167,7 +167,7 @@ public class StepsForYahooFinance {
     // YF_TestCase4 - Scenario: Verify the Founder and CEO Name of a given stock
     @When("User search for a Wipro stock on search bar")
     public void userSearchForAWiproStockOnSearchBar() throws InterruptedException {
-        String companyName = "Tata Motors";
+        companyName = "Tata Motors";
         driver.findElement(By.xpath("//input[@id='ybar-sbq']")).click();
 
         WebElement searchInput =
@@ -198,11 +198,14 @@ public class StepsForYahooFinance {
 
         String Role1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[2]")).getText();
         String Name1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[1]")).getText();
+        System.out.println("===================================================================");
         System.out.println(Role1+" of "+companyName+" is: "+Name1);
 
         String Role2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[12]")).getText();
         String Name2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[11]")).getText();
         System.out.println(Role2+" of "+companyName+" is: "+Name2);
+        System.out.println("===================================================================");
+
 
         TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC04_KeyExecutives.png");
         LoggerUtil.info("YF_TC04 Passed - Chairman and CEO names are retrieved properly");
