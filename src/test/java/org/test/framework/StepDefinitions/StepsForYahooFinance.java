@@ -20,6 +20,7 @@ public class StepsForYahooFinance {
     WebDriver driver = HooksStepDefinition.driver;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     public static String input;
+    public static String companyName;
 
     @Test
     //YF_TestCase1 - Scenario: Verify a HIGH/LOW percentage of a stock in a 5Y Range
@@ -166,7 +167,7 @@ public class StepsForYahooFinance {
     // YF_TestCase4 - Scenario: Verify the Founder and CEO Name of a given stock
     @When("User search for a Wipro stock on search bar")
     public void userSearchForAWiproStockOnSearchBar() throws InterruptedException {
-        String companyName = "Wipro";
+        String companyName = "Tata Motors";
         driver.findElement(By.xpath("//input[@id='ybar-sbq']")).click();
 
         WebElement searchInput =
@@ -175,9 +176,9 @@ public class StepsForYahooFinance {
             // Extract the character at the current index and convert it to a string.
             searchInput.sendKeys(String.valueOf(companyName.charAt(i)));
             // Add a delay or wait (e.g., for user interface responsiveness).
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         }
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         searchInput.sendKeys(Keys.ENTER);
     }
 
@@ -197,13 +198,13 @@ public class StepsForYahooFinance {
 
         String Role1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[2]")).getText();
         String Name1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[1]")).getText();
-        System.out.println(Role1+" of Wipro Limited is: "+Name1);
-
-        TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC04_KeyExecutives.png");
+        System.out.println(Role1+" of "+companyName+" is: "+Name1);
 
         String Role2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[12]")).getText();
         String Name2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[11]")).getText();
-        System.out.println(Role2+" of Wipro Limited is: "+Name2);
+        System.out.println(Role2+" of "+companyName+" is: "+Name2);
+
+        TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC04_KeyExecutives.png");
         LoggerUtil.info("YF_TC04 Passed - Chairman and CEO names are retrieved properly");
     }
 }

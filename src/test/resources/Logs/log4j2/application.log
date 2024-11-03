@@ -343,3 +343,11 @@
 2024-11-03 19:13:03 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-11-03 19:14:58 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC03 Passed - Stocks compared successfully
 2024-11-03 19:15:02 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-03 19:17:58 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-03 19:19:55 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
+2024-11-03 19:19:57 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-03 19:24:08 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-03 19:25:34 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-03 19:26:09 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-03 19:27:50 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
+2024-11-03 19:27:53 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
