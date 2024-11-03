@@ -5,14 +5,12 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.test.framework.Helper.TakeSnapshot;
+import org.test.framework.Utilities.LoggerUtil;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -24,7 +22,7 @@ public class StepsForYahooFinance {
     public static String input;
 
     @Test
-    // Scenario: Verify a HIGH/LOW percentage of a stock in a 5Y Range
+    //YF_TestCase1 - Scenario: Verify a HIGH/LOW percentage of a stock in a 5Y Range
     @Given("URL to the Yahoo Finance site")
     public void open_yahoo_finance_site() {
         System.out.println("This is Step 1_YF");
@@ -44,9 +42,9 @@ public class StepsForYahooFinance {
             // Extract the character at the current index and convert it to a string.
             searchInput.sendKeys(String.valueOf(input.charAt(i)));
             // Add a delay or wait (e.g., for user interface responsiveness).
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         }
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         searchInput.sendKeys(Keys.ENTER);
 
     }
@@ -65,10 +63,13 @@ public class StepsForYahooFinance {
         WebElement Percentage = driver.findElement(By.xpath("//div[@class='tooltip al-bottom positive plain yf-7dju6j displayed']"));
         String change = Percentage.getText();
         System.out.println("5Y Price change of NIFTY50 Index is: "+change);
+        TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC01_5Y H/L Range.png");
+        LoggerUtil.info("YF_TC01 Passed - 5Y Percentage change captured successfully");
+
     }
 
     //===========================================================================================
-    // Scenario: Verify the close price of a stock on last trading session
+    // YF_TestCase2 - Scenario: Verify the close price of a stock on last trading session
     @When("Chooses Historical Data option")
     public void user_selects_historical_data_option() {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ellipsis yf-1e6z5da' and text()='Historical Data']")));
@@ -82,15 +83,15 @@ public class StepsForYahooFinance {
         String closeDate = driver.findElement(By.xpath("(//td[@class='yf-h2urb6'])[1]")).getText();
         String closePrice = driver.findElement(By.xpath("(//td[@class='yf-h2urb6'])[5]")).getText();
         System.out.println("The Close price of "+input+" on the last trading session "+closeDate+ " is --> "+closePrice);
+        LoggerUtil.info("YF_TC02 Passed - Retrieved close price of a stock on last trading session");
     }
 
     //===========================================================================================
 
-    // Scenario: Validate and compare 2 stocks and get which has highest market cap
+    // YF_TestCase3 - Scenario: Validate and compare 2 stocks and get which has highest market cap
     @When("User search for a Adani Power stock on search bar")
     public void user_search_adani_power() throws InterruptedException {
         String compareStock1 = "Adani Power";
-        String compareStock2 = "Tata Power";
 
         WebElement searchInput =
                 wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='ybar-sbq']")));
@@ -106,56 +107,103 @@ public class StepsForYahooFinance {
 
     @When("Clicks compare option and clicks on Add")
     public void user_clicks_compare_and_add() {
-//span[@class='yf-1s1umie button']
-        (//button[@class='card-btn yf-1yegwxr'])[1]
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='yf-1s1umie button']")));
+        driver.findElement(By.xpath("//span[@class='yf-1s1umie button']")).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@class='card-btn yf-1yegwxr'])[1]")));
+        driver.findElement(By.xpath("(//button[@class='card-btn yf-1yegwxr'])[1]")).click();
+
     }
 
     @When("User search for another stock Tata Power and hit enters")
-    public void user_search_tata_power() {
-        // Implement search for Tata Power stock
+    public void user_search_tata_power() throws InterruptedException {
+
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@aria-label='Search for stock']")));
+        //driver.findElement(By.xpath("//input[@aria-label='Search for stock']")).click();
+        String compareStock2 = "Tata Power";
+
+        WebElement searchInput =
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@aria-label='Search for stock']")));
+        for (int i = 0; i < compareStock2.length(); i++) {
+            // Extract the character at the current index and convert it to a string.
+            searchInput.sendKeys(String.valueOf(compareStock2.charAt(i)));
+            // Add a delay or wait (e.g., for user interface responsiveness).
+            Thread.sleep(1000);
+        }
+        Thread.sleep(2000);
+        searchInput.sendKeys(Keys.ENTER);
     }
 
     @Then("Validates market cap of both and display which is higher")
-    public void validate_and_compare_market_cap() {
-        // Implement validation and comparison of the market cap for both stocks
+    public void validate_and_compare_market_cap() throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='value yf-1ykeqz6'])[1]")));
+        String adaniCap = driver.findElement(By.xpath("(//span[@class='value yf-1ykeqz6'])[1]")).getText();
+        System.out.println("Market Cap of AdaniPower: "+adaniCap);
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='value yf-1ykeqz6'])[2]")));
+        String tataCap = driver.findElement(By.xpath("(//span[@class='value yf-1ykeqz6'])[2]")).getText();
+        System.out.println("Market Cap of TataPower: "+tataCap);
+
+        String adaniValS = adaniCap.replaceAll("[a-zA-z]","");
+        String tataValS = tataCap.replaceAll("[a-zA-z]","");
+
+        if (Float.parseFloat(adaniValS) > Float.parseFloat(tataValS)) {
+            System.out.println("Market Cap of Adani Power is Higher than Tata Power");
+        } else
+            {
+                System.out.println("Market Cap of Tata Power is Higher than Adani Power");
+            }
+
+        WebElement element = driver.findElement(By.xpath("//h2[@class='yf-1pmcvpb']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(2000);
+        TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC03_StockCompare.png");
+        LoggerUtil.info("YF_TC03 Passed - Stocks compared successfully");
     }
 
     //===========================================================================================
 
-    // Scenario: Verify the Founder and CEO Name of a given stock
+    // YF_TestCase4 - Scenario: Verify the Founder and CEO Name of a given stock
     @When("User search for a Wipro stock on search bar")
-    public void userSearchForAWiproStockOnSearchBar() {
+    public void userSearchForAWiproStockOnSearchBar() throws InterruptedException {
+        String companyName = "Wipro";
+        driver.findElement(By.xpath("//input[@id='ybar-sbq']")).click();
 
+        WebElement searchInput =
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='ybar-sbq']")));
+        for (int i = 0; i < companyName.length(); i++) {
+            // Extract the character at the current index and convert it to a string.
+            searchInput.sendKeys(String.valueOf(companyName.charAt(i)));
+            // Add a delay or wait (e.g., for user interface responsiveness).
+            Thread.sleep(2000);
+        }
+        Thread.sleep(3000);
+        searchInput.sendKeys(Keys.ENTER);
     }
 
     @When("user selects Profile option")
     public void user_selects_profile_option() {
-        // Implement selection of Profile option for the stock
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ellipsis yf-1e6z5da' and text()='Profile']")));
+        driver.findElement(By.xpath("//span[@class='ellipsis yf-1e6z5da' and text()='Profile']")).click();
     }
 
     @Then("User should able to see name of Founder and CEO")
-    public void user_should_see_founder_and_ceo_names() {
-        // Implement verification of Founder and CEO names
+    public void user_should_see_founder_and_ceo_names() throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h3[text()='Key Executives']")));
+
+        WebElement element = driver.findElement(By.xpath("//h3[text()='Key Executives']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Thread.sleep(2000);
+
+        String Role1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[2]")).getText();
+        String Name1 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[1]")).getText();
+        System.out.println(Role1+" of Wipro Limited is: "+Name1);
+
+        TakeSnapshot snapshot = new TakeSnapshot(driver,"YF_TC04_KeyExecutives.png");
+
+        String Role2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[12]")).getText();
+        String Name2 = driver.findElement(By.xpath("(//td[@class='yf-mj92za'])[11]")).getText();
+        System.out.println(Role2+" of Wipro Limited is: "+Name2);
+        LoggerUtil.info("YF_TC04 Passed - Chairman and CEO names are retrieved properly");
     }
-
-    //===========================================================================================
-
-    // Scenario: Verify the Recently viewed section is working as expected on dashboard
-    @When("User search for 3 stocks stock on search bar one by one")
-    public void user_search_for_three_stocks() {
-        // Implement search for 3 different stocks one by one
-    }
-
-    @When("goes to the dashboard")
-    public void user_goes_to_dashboard() {
-        // Implement navigation to the dashboard
-    }
-
-    @Then("Verifies recently viewed section and Confirms those 3 stocks are listed")
-    public void verify_recently_viewed_section() {
-        // Implement verification of the Recently Viewed section on the dashboard
-    }
-
-    //===========================================================================================
-
 }

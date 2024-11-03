@@ -29,9 +29,9 @@ Feature: Yahoo Finance Test Automation Scenarios
   And user selects Profile option
   Then User should able to see name of Founder and CEO
 
-  @YF_TestCase5 @YF_Regression
-  Scenario: Verify the Recently viewed section is working as expected on dashboard
-  Given URL to the Yahoo Finance site
-  When User search for 3 stocks stock on search bar one by one
-  And goes to the dashboard
-  Then Verifies recently viewed section and Confirms those 3 stocks are listed
+ #@YF_TestCase5 @YF_Regression
+ #Scenario: Verify the Recently viewed section is working as expected on dashboard
+  #Given URL to the Yahoo Finance site
+  #When User search for 3 stocks stock on search bar one by one
+  #And goes to the dashboard
+  #Then Verifies recently viewed section and Confirms those 3 stocks are listed
