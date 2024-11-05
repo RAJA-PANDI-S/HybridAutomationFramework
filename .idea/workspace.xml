@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment=".feature files updated.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Formatting applied.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC03_MMIMarketZone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC03_MMIMarketZone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC04_Gainers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC04_Gainers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC05_Losers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC05_Losers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC07_SmallCapStocksList.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC07_SmallCapStocksList.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC08_MidCapStocksList.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC08_MidCapStocksList.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC09_LargeCapStocksList.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC09_LargeCapStocksList.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC01_LoginScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC01_LoginScreen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC02_PriceChartOfSBIN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC02_PriceChartOfSBIN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC01_Nifty50 5Y Range.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC01_Nifty50 5Y Range.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" afterDir="false" />
@@ -532,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730642769540</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Formatting applied.">
+      <option name="closed" value="true" />
+      <created>1730643449678</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1730643449678</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +564,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Screenshot code added - TakeSnapshot.java" />
     <MESSAGE value="Extent configs added - properties,xml,runner,dependancy for cucumber6. Basic report generated." />
     <MESSAGE value="All 3 Test Cases are working perfectly." />
     <MESSAGE value="New TC added for Trading View" />
@@ -572,6 +588,7 @@
     <MESSAGE value="YF_TC03 and TC04 completed." />
     <MESSAGE value="YF_TC03 and TC04 completed Update." />
     <MESSAGE value=".feature files updated." />
-    <option name="LAST_COMMIT_MESSAGE" value=".feature files updated." />
+    <MESSAGE value="Formatting applied." />
+    <option name="LAST_COMMIT_MESSAGE" value="Formatting applied." />
   </component>
 </project>

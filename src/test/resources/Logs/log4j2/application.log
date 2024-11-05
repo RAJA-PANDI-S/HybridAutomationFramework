@@ -357,3 +357,48 @@
 2024-11-03 19:44:40 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-11-03 19:46:26 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
 2024-11-03 19:46:28 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:01:02 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:01:22 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC01 Passed - Title matches successfully
+2024-11-05 17:01:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:01:26 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:01:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC02 Passed - Stock details captured successfully
+2024-11-05 17:01:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:01:53 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:02:11 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC03 Passed - MMI Range Identified and Captured snapshot
+2024-11-05 17:02:13 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:02:15 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:02:32 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC04 Passed - Listed Top 5 Gainers of the day
+2024-11-05 17:02:33 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:02:35 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:02:49 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC05 Passed - Listed Top 5 Losers of the day
+2024-11-05 17:02:50 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:02:51 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:03:04 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC06 Passed - Price of NIFTY IT printed as expected
+2024-11-05 17:03:04 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:03:06 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:03:25 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC07 Passed - Top 5 Small cap stocks are verified successfully
+2024-11-05 17:03:25 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:03:27 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:03:44 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC08 Passed - Top 5 Mid cap stocks are verified successfully
+2024-11-05 17:03:45 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:03:47 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:04:04 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | Screenshot Captured Successfully...!
+2024-11-05 17:04:04 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC09 Passed - Top 5 Large cap stocks are verified successfully
+2024-11-05 17:04:05 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:04:08 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:04:36 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC01 Passed - Logged in Successfully to the TradingView Site
+2024-11-05 17:04:37 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:04:39 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:05:28 [main] INFO  | org.test.framework.StepDefinitions.StepsForTradingView | TV_TC02 Passed - Viewed SBIN Price Chart and Snapshot captured
+2024-11-05 17:05:29 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:05:31 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:06:43 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC01 Passed - 5Y Percentage change captured successfully
+2024-11-05 17:06:44 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:06:46 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:08:20 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC02 Passed - Retrieved close price of a stock on last trading session
+2024-11-05 17:08:21 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:08:23 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:10:00 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-05 17:10:02 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-05 17:11:48 [main] INFO  | org.test.framework.StepDefinitions.StepsForYahooFinance | YF_TC04 Passed - Chairman and CEO names are retrieved properly
+2024-11-05 17:11:49 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
