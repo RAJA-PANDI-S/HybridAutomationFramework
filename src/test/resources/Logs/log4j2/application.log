@@ -625,3 +625,6 @@
 2024-11-07 13:43:20 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
 2024-11-07 13:44:06 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC01 Passed - Title matches successfully
 2024-11-07 13:44:07 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully
+2024-11-07 13:53:51 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Initiated Successfully
+2024-11-07 13:54:15 [main] INFO  | org.test.framework.StepDefinitions.StepsForTickertape | TT_TC01 Passed - Title matches successfully
+2024-11-07 13:54:17 [main] INFO  | org.test.framework.StepDefinitions.HooksStepDefinition | Chrome Browser Terminated Successfully

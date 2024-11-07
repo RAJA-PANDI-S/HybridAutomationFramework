@@ -123,7 +123,7 @@
             <suiteXmlFiles>
                 <!--suppress UnresolvedMavenProperty -->
                 <suiteXmlFile>
-                    src/test/resources/runner/${suiteXmlFile}
+                    src/test/resources/testNG/runner.xml
                 </suiteXmlFile>
             </suiteXmlFiles>
         </configuration>
