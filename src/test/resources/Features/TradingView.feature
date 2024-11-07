@@ -9,7 +9,7 @@ Feature: Trading View Test Automation Scenarios
     And User clicks sign in button and able to login successfully
 
   @TV_TestCase2 @TV_Regression @E2ETestRun
-  Scenario: Verify that User a stock and view the chart
+  Scenario: Verify that User can search a stock and view the chart
     Given URL to the TradingView site
     When User Clicks on Search bar
     And Search for a stock and hits enter

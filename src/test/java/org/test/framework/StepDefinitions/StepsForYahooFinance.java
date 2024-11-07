@@ -108,8 +108,8 @@ public class StepsForYahooFinance {
 
     @When("Clicks compare option and clicks on Add")
     public void user_clicks_compare_and_add() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='yf-1s1umie button']")));
-        driver.findElement(By.xpath("//span[@class='yf-1s1umie button']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='yf-k4z9w button']")));
+        driver.findElement(By.xpath("//span[@class='yf-k4z9w button']")).click();
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@class='card-btn yf-1yegwxr'])[1]")));
         driver.findElement(By.xpath("(//button[@class='card-btn yf-1yegwxr'])[1]")).click();

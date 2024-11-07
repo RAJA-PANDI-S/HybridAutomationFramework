@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Formatting applied.">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="E2ETestRun executed. 14 Passed, 1 Failed.">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testNG/runner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForTradingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/StepDefinitions/StepsForYahooFinance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/TradingView.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC03_MMIMarketZone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC03_MMIMarketZone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC04_Gainers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC04_Gainers.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC05_Losers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TT_TC05_Losers.png" afterDir="false" />
@@ -16,6 +21,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC01_LoginScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC01_LoginScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC02_PriceChartOfSBIN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/TV_TC02_PriceChartOfSBIN.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC01_Nifty50 5Y Range.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC01_Nifty50 5Y Range.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC03_StockCompare.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC03_StockCompare.png.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/Snapshots/YF_TC04_KeyExecutives.png.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Logs/log4j2/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-report/reports/extent-code-report.html" afterDir="false" />
@@ -61,34 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TradingView.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.TestCase3.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [--update-snapshots].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.StepDefinition.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: TestScenarios (1).executor": "Run",
+    "Cucumber Java.Feature: TestScenarios.executor": "Run",
+    "Cucumber Java.Feature: TradingView.executor": "Run",
+    "Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor": "Run",
+    "Cucumber Java.TestCase3.executor": "Run",
+    "Maven.HybridAutomationFramework [--update-snapshots].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install...].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install].executor": "Run",
+    "Maven.HybridAutomationFramework [clean].executor": "Run",
+    "Maven.HybridAutomationFramework [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor": "Run",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml.executor": "Run",
+    "TestNG.StepDefinition.executor": "Debug",
+    "TestNG.TestRunner.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config",
+    "onboarding.tips.debug.path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "Console"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\main\resources\Config" />
@@ -109,7 +116,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+  <component name="RunManager" selected="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml">
     <configuration name="Feature: TestScenarios (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/TestScenarios.feature" />
@@ -169,17 +176,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepsForTickertape" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HybridAutomationFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.test.framework.StepDefinitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.test.framework.StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="org.test.framework.StepDefinitions.StepsForTickertape" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testNG/runner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -207,16 +207,16 @@
       <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
       <item itemvalue="Cucumber Java.Feature: TradingView" />
       <item itemvalue="Cucumber Java.TestCase3" />
-      <item itemvalue="TestNG.StepsForTickertape" />
+      <item itemvalue="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: TradingView" />
         <item itemvalue="Cucumber Java.TestCase3" />
         <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
-        <item itemvalue="TestNG.StepsForTickertape" />
       </list>
     </recent_temporary>
   </component>
@@ -549,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730643449678</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="E2ETestRun executed. 14 Passed, 1 Failed.">
+      <option name="closed" value="true" />
+      <created>1730807267935</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730807267935</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Extent configs added - properties,xml,runner,dependancy for cucumber6. Basic report generated." />
     <MESSAGE value="All 3 Test Cases are working perfectly." />
     <MESSAGE value="New TC added for Trading View" />
     <MESSAGE value="New steps and feature files added for YahooFinance, TradingView" />
@@ -589,6 +596,7 @@
     <MESSAGE value="YF_TC03 and TC04 completed Update." />
     <MESSAGE value=".feature files updated." />
     <MESSAGE value="Formatting applied." />
-    <option name="LAST_COMMIT_MESSAGE" value="Formatting applied." />
+    <MESSAGE value="E2ETestRun executed. 14 Passed, 1 Failed." />
+    <option name="LAST_COMMIT_MESSAGE" value="E2ETestRun executed. 14 Passed, 1 Failed." />
   </component>
 </project>

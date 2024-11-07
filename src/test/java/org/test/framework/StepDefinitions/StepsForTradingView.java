@@ -117,7 +117,7 @@ public class StepsForTradingView {
 
     //============================================================================================================//
 
-    //TV_TestCase2 - Scenario: Verify that User a stock and view the chart
+    //TV_TestCase2 - Scenario: Verify that User can search a stock and view the chart
     @When("User Clicks on Search bar")
     public void user_clicks_on_search_bar() throws InterruptedException {
         driver.findElement(By.xpath("//span[@class='searchText-PCujdK9L']")).click();
