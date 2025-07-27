@@ -38,7 +38,6 @@ public class StepsForTickertape {
         System.out.println("Google Started at \t{}" + Instant.now());
         extentUtil.extentCreateTest("TC01_Enter Google Chrome");
         test.pass("Step 1 Passed");
-
     }
 
     @When("User enters Tickertape in search bar")
@@ -361,6 +360,7 @@ public class StepsForTickertape {
     @Then("Pick top 5 large cap stocks and Print them with Market cap")
     public void pickFirstLargeStocksAndPrintThemWithMarketCap() {
 
+        System.out.println("===================================================================");
         for (int i = 1; i <= 5; i++) {
             // Locate each stock element by its index in the loop
             WebElement capName = driver.findElement(By.xpath("(//span[@class='jsx-427622308 desktop--only pointer'])[" + i + "]"));
@@ -371,6 +371,8 @@ public class StepsForTickertape {
             String Price = capPrice.getText();
             System.out.println("StockName: " + Name + " -- MarketCap: " + Price);
         }
+
+        System.out.println("===================================================================");
         LoggerUtil.info("TT_TC09 Passed - Top 5 Large cap stocks are verified successfully");
     }
 }

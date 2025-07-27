@@ -5,6 +5,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.test.framework.Utilities.ExtentUtil;
 import org.test.framework.Utilities.LoggerUtil;
 
@@ -17,7 +18,16 @@ public class HooksStepDefinition {
    // Scenario scenario;
     @Before
     public void setUp() {
+
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");  // Enable headless mode
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--ignore-certificate-errors");
+//
+//        driver = new ChromeDriver(options);
         driver = new ChromeDriver();
+
         extentUtil.startReport();
       //  extentUtil.extentCreateTest(scenario.getName());
         LoggerUtil.info("Chrome Browser Initiated Successfully");
