@@ -27,26 +27,32 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.11.0</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Cucumber -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>6.11.0</version>
+            <version>7.33.0</version>
         </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>6.11.0</version>
+            <version>7.33.0</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>io.cucumber</groupId>-->
+<!--            <artifactId>cucumber-core</artifactId>-->
+<!--            <version>6.11.0</version>-->
+<!--        </dependency>-->
+
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
-            <version>6.11.0</version>
+            <version>7.33.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -63,17 +69,24 @@
             <version>2.1.0-alpha1</version>
         </dependency>
 
+        <!-- Extent Reports Cucumber 7 Adapter -->
         <dependency>
             <groupId>tech.grasshopper</groupId>
-            <artifactId>extentreports-cucumber6-adapter</artifactId>
-            <version>2.18.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.cucumber</groupId>
-                    <artifactId>cucumber-core</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.14.0</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>tech.grasshopper</groupId>-->
+<!--            <artifactId>extentreports-cucumber6-adapter</artifactId>-->
+<!--            <version>2.18.0</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.cucumber</groupId>-->
+<!--                    <artifactId>cucumber-core</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>

@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Plugin update on pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +62,18 @@
     &quot;Maven.HybridAutomationFramework [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.StepDefinition.executor&quot;: &quot;Debug&quot;,
     &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -184,6 +190,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: TestScenarios (1)" />
+      <item itemvalue="Cucumber Java.Feature: TradingView" />
+      <item itemvalue="Cucumber Java.TestCase3" />
       <item itemvalue="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
@@ -193,6 +202,14 @@
         <item itemvalue="TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -558,6 +575,9 @@
     <option name="localTasksCounter" value="45" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -596,5 +616,9 @@
     <MESSAGE value="runner.xml and plugin added." />
     <MESSAGE value="Plugin update on pom.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Plugin update on pom.xml" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

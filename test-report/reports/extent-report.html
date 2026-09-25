@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 27, 2025 09:49:22 am</span></a>
+<a href="#"><span class="badge badge-primary">Sept 25, 2026 12:42:49 pm</span></a>
 </li>
 </ul>
 </div>
@@ -84,7 +84,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@YF_Regression</a><a class="dropdown-item" href="#">@YF_TestCase1</a><a class="dropdown-item" href="#">@E2ETestRun</a>
+<a class="dropdown-item" href="#">@E2ETestRun</a><a class="dropdown-item" href="#">@TT_TestCase1</a><a class="dropdown-item" href="#">@TT_Regression</a><a class="dropdown-item" href="#">@Smoke</a>
 </ul>
 </li>
 </ul>
@@ -95,9 +95,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Yahoo Finance Test Automation Scenarios</p>
+            <p class="name">Tickertape Site Automation</p>
             <p class="text-sm">
-              <span>9:49:23 am</span> / <span>00:01:26:245</span>
+              <span>12:42:53 pm</span> / <span>00:00:41:906</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -105,10 +105,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Yahoo Finance Test Automation Scenarios</h5>
-<span class='badge badge-success'>07.27.2025 9:49:23 am</span>
-<span class='badge badge-danger'>07.27.2025 9:50:49 am</span>
-<span class='badge badge-default'>00:01:26:245</span>
+<h5 class="test-status text-fail">Tickertape Site Automation</h5>
+<span class='badge badge-success'>09.25.2026 12:42:53 pm</span>
+<span class='badge badge-danger'>09.25.2026 12:43:35 pm</span>
+<span class='badge badge-default'>00:00:41:906</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,38 +121,28 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify a HIGH/LOW percentage of a stock in a 5Y Range</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User searches Tickertape on Google and navigates to the site</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.open_yahoo_finance_site()">
-                <span>Given URL to the Yahoo Finance site</span>
+              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_is_on_google_homepage()">
+                <span>Given User is on google homepage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.user_search_for_a_stock()">
-                <span>When User search for a stock on search bar</span>
+              <div class="step fail-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_enters_tickertape_in_search_bar()">
+                <span>When User enters Tickertape in search bar</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.user_selects_5Y_range()">
-                <span>And Chooses 5Y range in the graph</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='yf-xxbei9'] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.test.framework.StepDefinitions.StepsForYahooFinance.user_selects_5Y_range(StepsForYahooFinance.java:56)
-	at ✽.Chooses 5Y range in the graph(file:///C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/Features/YahooFinance.feature:7)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='yf-xxbei9']"}
-  (Session info: chrome=138.0.7204.169)
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="APjFqb"]"}
+  (Session info: chrome=153.0.8010.53)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff740d5a868cbd548c1148400c405df4, findElement {value=//h1[@class='yf-xxbei9'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\Raja\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49811}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49811/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ff740d5a868cbd548c1148400c405df4
+Command: [24cc42cc0b5438940906ee022f34383b, findElement {value=//*[@id="APjFqb"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\varshini\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62573}, goog:processID: 20688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62573/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24cc42cc0b5438940906ee022f34383b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -167,64 +157,24 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at org.test.framework.StepDefinitions.StepsForYahooFinance.user_selects_5Y_range(StepsForYahooFinance.java:56)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:134)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at org.test.framework.StepDefinitions.StepsForTickertape.user_enters_tickertape_in_search_bar(StepsForTickertape.java:46)
+	at ✽.User enters Tickertape in search bar(file:///C:/Users/varshini/IdeaProjects/HybridAutomationFramework/src/test/resources/Features/Tickertape.feature:6)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="org.test.framework.StepDefinitions.StepsForYahooFinance.tooltip_should_display_percentage_value()">
-                <span>Then a tooltip should display with percentage value</span>
+              <div class="step skip-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.clicks_enter()">
+                <span>And Clicks enter</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_clicks_on_the_link_of_tickertape_site()">
+                <span>Then User clicks on the link of tickertape site</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.test.framework.StepDefinitions.StepsForTickertape.user_is_able_to_enter_the_site_and_verify_title()">
+                <span>And User is able to enter the site and verify title</span>
       <div>Step skipped
       </div>
               </div>
@@ -256,12 +206,12 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -275,11 +225,11 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:50:36 am</td>
+<td>12:43:30 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='6'>And Chooses 5Y range in the graph</a>
+<a href="#" class="linked" test-id='1' id='6'>When User enters Tickertape in search bar</a>
 <div class="">
-<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify a HIGH/LOW percentage of a stock in a 5Y Range.And Chooses 5Y range in the graph</span>
+<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site.When User enters Tickertape in search bar</span>
 </div>
 </td>
 </tr>
@@ -299,82 +249,10 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@YF_Regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@YF_Regression</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:49:23 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Verify a HIGH/LOW percentage of a stock in a 5Y Range</a>
-<div class="">
-<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify a HIGH/LOW percentage of a stock in a 5Y Range</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@YF_TestCase1</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@YF_TestCase1</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:49:23 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Verify a HIGH/LOW percentage of a stock in a 5Y Range</a>
-<div class="">
-<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify a HIGH/LOW percentage of a stock in a 5Y Range</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -399,11 +277,119 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>09:49:23 am</td>
+<td>12:42:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify a HIGH/LOW percentage of a stock in a 5Y Range</a>
+<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
 <div class="">
-<span class="badge badge-default">Yahoo Finance Test Automation Scenarios.Verify a HIGH/LOW percentage of a stock in a 5Y Range</span>
+<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TT_TestCase1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TT_TestCase1</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:42:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
+<div class="">
+<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TT_Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TT_Regression</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:42:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
+<div class="">
+<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:42:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User searches Tickertape on Google and navigates to the site</a>
+<div class="">
+<span class="badge badge-default">Tickertape Site Automation.User searches Tickertape on Google and navigates to the site</span>
 </div>
 </td>
 </tr>
@@ -424,13 +410,13 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 27, 2025 09:49:22 am</h3>
+<h3>Sept 25, 2026 12:42:49 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 27, 2025 09:50:49 am</h3>
+<h3>Sept 25, 2026 12:43:35 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -501,10 +487,10 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='20%'><b>1</b> steps passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='20%'><b>1</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -520,7 +506,7 @@ Session ID: ff740d5a868cbd548c1148400c405df4
 </div></div>
 <script>
 var timeline = {
-"Yahoo Finance Test Automation Scenarios":86.245
+"Tickertape Site Automation":41.906
 };
 </script>
 <div class="row">
@@ -530,23 +516,31 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@YF_Regression</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@YF_TestCase1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
 <td>@E2ETestRun</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TT_TestCase1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TT_Regression</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -573,10 +567,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 1,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };
