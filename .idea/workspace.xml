@@ -3,16 +3,22 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="Plugin update on pom.xml">
+    <list default="true" id="51f0d0c1-1ec4-4a6b-8eb3-af2a1cebe611" name="Changes" comment="pom.xml update on 25Sep2026 and Made the code runnable.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/framework/Runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/varshini/IdeaProjects/HybridAutomationFramework" value="3JoIejDm2YwTjMN16IH67tJCE4T" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,7 +39,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RAJA-PANDI-S/HybridAutomationFramework.git&quot;,
-    &quot;accountId&quot;: &quot;8181fbc2-33ea-4fd5-99dc-d14dde2d3e09&quot;
+    &quot;accountId&quot;: &quot;f6de643b-3284-44e8-a5b0-5e5406d6dfc8&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -43,45 +49,61 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2lgZMv4DB0iNxzVRilh39Moq3Kc" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TestScenarios.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: TradingView.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.TestCase3.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [--update-snapshots].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.HybridAutomationFramework [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.StepDefinition.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: TestScenarios (1).executor": "Run",
+    "Cucumber Java.Feature: TestScenarios.executor": "Run",
+    "Cucumber Java.Feature: TradingView.executor": "Run",
+    "Cucumber Java.Scenario: Check the Market mood on MMI (Market Mood Index) screen.executor": "Run",
+    "Cucumber Java.TestCase3.executor": "Run",
+    "Maven.HybridAutomationFramework [--update-snapshots].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install...].executor": "Run",
+    "Maven.HybridAutomationFramework [clean,install].executor": "Run",
+    "Maven.HybridAutomationFramework [clean].executor": "Run",
+    "Maven.HybridAutomationFramework [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config/testng.xml.executor": "Run",
+    "TestNG.C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/test/resources/testNG/runner.xml.executor": "Run",
+    "TestNG.StepDefinition.executor": "Debug",
+    "TestNG.TestRunner.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.codeium.enabled": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/resources/Config",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Raja/IntellijProjects/HybridAutomationFramework/src/main/java/org/test/framework/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.completions.CompletionsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Raja\IntellijProjects\HybridAutomationFramework\src\main\resources\Config" />
@@ -590,7 +612,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New steps and feature files added for YahooFinance, TradingView" />
     <MESSAGE value="Created steps outline for yahoo finance scenario" />
     <MESSAGE value="EncryptionUtil and ExcelDataDrivenUtil added." />
     <MESSAGE value="Existing Code update" />
@@ -615,7 +636,8 @@
     <MESSAGE value="E2ETestRun executed. 14 Passed, 1 Failed." />
     <MESSAGE value="runner.xml and plugin added." />
     <MESSAGE value="Plugin update on pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plugin update on pom.xml" />
+    <MESSAGE value="pom.xml update on 25Sep2026 and Made the code runnable." />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml update on 25Sep2026 and Made the code runnable." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
